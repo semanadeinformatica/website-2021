@@ -1,0 +1,58 @@
+body {
+    background-image: linear-gradient(to right, #FF8451 , #FC08BC);
+}
+
+*{
+  font-family: 'Roboto';
+  color: white;
+}
+
+#road_block{
+  width: 6pc;
+}
+
+.svg-white{
+  align-items: baseline;
+}
+
+.svg-white svg{
+  filter: invert(100%);
+}
+
+.svg-white a{
+  text-decoration: none;
+  color: white;
+}
+
+:hover .svg-white a{
+  text-decoration: none;
+  color: white;
+}
+
+.timer{
+  display: table;
+  min-width: 1px;
+  margin-top: 1.5pc;
+  font-weight: bold;
+}
+
+.title{
+  font-size: 4pc;
+}
+
+.btn.btn-rounded{
+  width: 13pc;
+  font-size: 1.4pc;
+  border-width: 0.2pc;
+  border-radius: 40pc;
+}
+
+.timer div p{
+  margin-bottom: -0.2pc;
+}
+
+.logo{
+  width: 10pc;
+  margin-left: 1.5pc;
+  margin-top: 1.5pc;
+}
