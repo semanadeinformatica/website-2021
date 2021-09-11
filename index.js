@@ -1,13 +1,20 @@
 var countDownDate = new Date("Nov 15, 2021 00:00:00").getTime();
 
-// Update the count down every 1 second
-setInterval(function() {
-
+function updateRemainingTime() {
   // Get today's date and time
   var now = new Date().getTime();
 
   // Find the distance between now and the count down date
   var distance = countDownDate - now;
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    document.getElementById("days").innerHTML = "0";
+    document.getElementById("hours").innerHTML = "0";
+    document.getElementById("minutes").innerHTML = "0";
+    document.getElementById("seconds").innerHTML = "0";
+    return;
+  }
 
   // Time calculations for days, hours, minutes and seconds
   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -21,12 +28,8 @@ setInterval(function() {
   document.getElementById("minutes").innerHTML = minutes;
   document.getElementById("seconds").innerHTML = seconds;
 
-  // If the count down is finished, write some text
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("days").innerHTML = "0";
-    document.getElementById("hours").innerHTML = "0";
-    document.getElementById("minutes").innerHTML = "0";
-    document.getElementById("seconds").innerHTML = "0";
-  }
-}, 1000);
+  // Repeat once per second
+  setTimeout(updateRemainingTime, 1000);
+};
+
+window.onload = updateRemainingTime;
