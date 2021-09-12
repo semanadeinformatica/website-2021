@@ -30,10 +30,14 @@ body {
 }
 
 .timer{
-  display: table;
-  min-width: 1px;
   margin-top: 1.5pc;
   font-weight: bold;
+  float:right;
+}
+
+.timer p{
+  text-align: center;
+  line-height: 0.5pc;
 }
 
 .title{
@@ -55,4 +59,24 @@ body {
   width: 10pc;
   margin-left: 1.5pc;
   margin-top: 1.5pc;
+}
+
+@media only screen and (max-width: 600px) {
+  /* Put timer on new line on mobile*/
+  .timer{
+    margin-top: 1.5pc;
+    float: none;
+    margin-left: 1.5pc;
+  }
+  #road_block{
+    width: 5pc;
+  }
+  .title {
+    font-size: 2pc; 
+  }
+  .btn.btn-rounded{
+    margin-top: -1pc;
+    width: 8pc;
+    font-size: 1.2pc;
+  }
 }
