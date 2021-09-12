@@ -7,8 +7,44 @@ body {
   color: white;
 }
 
+.logo{
+  width: 10pc;
+  margin-left: 1.5pc;
+  margin-top: 1.5pc;
+}
+
+.timer{
+  margin-top: 1.5pc;
+  margin-right: 1.5pc;
+  font-weight: bold;
+  float:right;
+}
+
+.timer td {
+  line-height: 0.5pc;
+  text-align: center;
+  padding-left: 1.5pc;
+}
+
+.timer:after {
+  clear: both;
+  content: "";
+  float: left;
+}
+
 #road_block{
   width: 6pc;
+}
+
+.title{
+  font-size: 4pc;
+}
+
+.btn.btn-rounded{
+  width: 13pc;
+  font-size: 1.4pc;
+  border-width: 0.2pc;
+  border-radius: 40pc;
 }
 
 .svg-white{
@@ -29,44 +65,18 @@ body {
   color: white;
 }
 
-.timer{
-  margin-top: 1.5pc;
-  font-weight: bold;
-  float:right;
-}
-
-.timer p{
-  text-align: center;
-  line-height: 0.5pc;
-}
-
-.title{
-  font-size: 4pc;
-}
-
-.btn.btn-rounded{
-  width: 13pc;
-  font-size: 1.4pc;
-  border-width: 0.2pc;
-  border-radius: 40pc;
-}
-
-.timer div p{
-  margin-bottom: -0.2pc;
-}
-
-.logo{
-  width: 10pc;
-  margin-left: 1.5pc;
-  margin-top: 1.5pc;
-}
-
 @media only screen and (max-width: 600px) {
-  /* Put timer on new line on mobile*/
+  .logo {
+    margin: 1.5pc auto 20px;
+    display: block;
+  }
   .timer{
-    margin-top: 1.5pc;
     float: none;
-    margin-left: 1.5pc;
+    margin-top: 1.5pc;
+  }
+  .timer table {
+    margin-left:auto; 
+    margin-right:auto;
   }
   #road_block{
     width: 5pc;
@@ -78,5 +88,14 @@ body {
     margin-top: -1pc;
     width: 8pc;
     font-size: 1.2pc;
+  }
+  .social-text {
+    display: none;
+  }
+}
+
+@media only screen and (max-height: 600px) {
+  .svg-white{
+    visibility: hidden;
   }
 }
