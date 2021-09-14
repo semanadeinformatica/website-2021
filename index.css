@@ -40,11 +40,17 @@ body {
   font-size: 4pc;
 }
 
+.buttons {
+  justify-content: center;
+}
+
 .btn.btn-rounded{
   width: 13pc;
   font-size: 1.4pc;
   border-width: 0.2pc;
   border-radius: 40pc;
+  margin-left: 2pc;
+  margin-right: 2pc;
 }
 
 .svg-white{
@@ -79,18 +85,25 @@ body {
     margin-right:auto;
   }
   #road_block{
-    width: 5pc;
+    width: 4pc;
+    margin-top: -1pc;
   }
   .title {
-    font-size: 2pc; 
-  }
-  .btn.btn-rounded{
-    margin-top: -1pc;
-    width: 8pc;
-    font-size: 1.2pc;
+    font-size: 2pc;
+    margin-bottom: -1pc;
   }
   .social-text {
     display: none;
+  }
+  .buttons {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .btn.btn-rounded{
+    font-size: 1.2pc;
+    margin-bottom: 1pc;
+    margin-left:auto; 
+    margin-right:auto;
   }
 }
 
