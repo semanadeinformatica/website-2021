@@ -7,8 +7,50 @@ body {
   color: white;
 }
 
+.logo{
+  width: 10pc;
+  margin-left: 1.5pc;
+  margin-top: 1.5pc;
+}
+
+.timer{
+  margin-top: 1.5pc;
+  margin-right: 1.5pc;
+  font-weight: bold;
+  float:right;
+}
+
+.timer td {
+  line-height: 0.5pc;
+  text-align: center;
+  padding-left: 1.5pc;
+}
+
+.timer:after {
+  clear: both;
+  content: "";
+  float: left;
+}
+
 #road_block{
   width: 6pc;
+}
+
+.title{
+  font-size: 4pc;
+}
+
+.buttons {
+  justify-content: center;
+}
+
+.btn.btn-rounded{
+  width: 13pc;
+  font-size: 1.4pc;
+  border-width: 0.2pc;
+  border-radius: 40pc;
+  margin-left: 2pc;
+  margin-right: 2pc;
 }
 
 .svg-white{
@@ -29,30 +71,44 @@ body {
   color: white;
 }
 
-.timer{
-  display: table;
-  min-width: 1px;
-  margin-top: 1.5pc;
-  font-weight: bold;
+@media only screen and (max-width: 600px) {
+  .logo {
+    margin: 1.5pc auto 20px;
+    display: block;
+  }
+  .timer{
+    float: none;
+    margin-top: 1.5pc;
+  }
+  .timer table {
+    margin-left:auto; 
+    margin-right:auto;
+  }
+  #road_block{
+    width: 4pc;
+    margin-top: -1pc;
+  }
+  .title {
+    font-size: 2pc;
+    margin-bottom: -1pc;
+  }
+  .social-text {
+    display: none;
+  }
+  .buttons {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .btn.btn-rounded{
+    font-size: 1.2pc;
+    margin-bottom: 1pc;
+    margin-left:auto; 
+    margin-right:auto;
+  }
 }
 
-.title{
-  font-size: 4pc;
-}
-
-.btn.btn-rounded{
-  width: 13pc;
-  font-size: 1.4pc;
-  border-width: 0.2pc;
-  border-radius: 40pc;
-}
-
-.timer div p{
-  margin-bottom: -0.2pc;
-}
-
-.logo{
-  width: 10pc;
-  margin-left: 1.5pc;
-  margin-top: 1.5pc;
+@media only screen and (max-height: 600px) {
+  .svg-white{
+    visibility: hidden;
+  }
 }
