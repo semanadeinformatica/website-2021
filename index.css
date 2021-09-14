@@ -55,6 +55,9 @@ body {
 
 .svg-white{
   align-items: baseline;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 .svg-white svg{
@@ -109,6 +112,7 @@ body {
 
 @media only screen and (max-height: 600px) {
   .svg-white{
-    visibility: hidden;
+    position: relative;
+    margin-top: 1.5pc;
   }
 }
