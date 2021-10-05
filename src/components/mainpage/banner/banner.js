@@ -1,5 +1,4 @@
 import React from "react"
-import Img from "gatsby-image"
 
 import BasicInfo from "./basic-info"
 import Carousel from "react-bootstrap/Carousel"
@@ -25,7 +24,7 @@ const Banner = () => {
         keyboard={false}
         pause={false}
         touch={false}
-        interval={3000}
+        interval={99999999999}
       >
         {data.allFile.edges.map(pic => (
           <Carousel.Item
@@ -35,10 +34,10 @@ const Banner = () => {
             ].join(" ")}
             key={pic.node.id}
           >
-            <Img
-              fluid={pic.node.childImageSharp.fluid}
-              className={BannerStyles.carouselImage}
-            />
+            <div
+            className={BannerStyles.gradient}
+            >
+            </div>
           </Carousel.Item>
         ))}
       </Carousel>

@@ -1,19 +1,19 @@
 import React from "react"
-import { FaLinkedin, FaFacebookSquare, FaInstagramSquare } from "react-icons/fa"
+import { AiOutlineLinkedin, AiOutlineFacebook, AiOutlineInstagram } from "react-icons/ai"
 import BannerStyles from "../../../styles/mainpage/banner.module.css"
 
 const links = [
   {
-    icon: <FaLinkedin />,
-    href: "https://www.linkedin.com/company/sinffeup/",
-  },
-  {
-    icon: <FaFacebookSquare />,
+    icon: <AiOutlineFacebook />,
     href: "https://facebook.com/sinfFEUP",
   },
   {
-    icon: <FaInstagramSquare />,
+    icon: <AiOutlineInstagram />,
     href: "https://instagram.com/sinffeup",
+  },
+  {
+    icon: <AiOutlineLinkedin />,
+    href: "https://www.linkedin.com/company/sinffeup/",
   },
 ]
 

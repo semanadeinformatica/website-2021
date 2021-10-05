@@ -8,6 +8,13 @@
   color: white;
 }
 
+.gradient{
+  background-color:#FC08BC;
+  background-image: radial-gradient(circle at top right,#FF8451, #FC08BC);
+  width: auto;
+  height: 50em;
+}
+
 .banner_info {
   margin-top: 5em;
   display: flex;
@@ -40,8 +47,8 @@
 }
 
 .icon_links a {
-  margin: 0 0.3em;
-  font-size: 1.5em;
+  margin: 0 0.1em;
+  font-size: 2em;
   font-weight: bold;
   text-decoration: none;
   color: var(--white);
@@ -54,6 +61,7 @@
 
 .info {
   text-align: center;
+  font-weight: 500;
 }
 
 .info p {

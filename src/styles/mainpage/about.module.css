@@ -1,7 +1,7 @@
 @import "../common/palette.css";
 
 .aboutContainer {
-  background-image: linear-gradient(var(--color2), var(--color3) 90%);
+  background-color: #FF8451;
   color: var(--white);
   padding: 7rem 0 4rem 0;
 }
@@ -15,6 +15,10 @@
   background-color: var(--color4);
   position: relative;
   top: 58.5px;
+}
+
+.countdownContainer{
+  
 }
 
 .aboutContainer .countdownContainer .number {

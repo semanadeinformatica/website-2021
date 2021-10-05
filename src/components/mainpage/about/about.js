@@ -6,6 +6,7 @@ import Col from "react-bootstrap/Col"
 
 import AboutStyles from "../../../styles/mainpage/about.module.css"
 import mainStyles from "../../../styles/mainpage/mainpage.module.css"
+import Countdown from "../countdown/countdown"
 
 import { useAboutUsImages } from "../../hooks/about-us-query"
 
@@ -38,8 +39,10 @@ const About = () => {
               diversas áreas da Informática, promovendo a sua interação com o
               mundo empresarial através de eventos sociais.
             </p>
+            </Col>
+            <Col xs="12" lg="6">
             <p>
-              A edição de 2020 decorre entre os dias 9 a 11 de novembro, em modo{" "}
+              A edição de 2021 decorre entre os dias 15 a 17 de novembro, em modo{" "}
               <em>remote</em>. Os participantes têm a seu dispor palestras e
               workshops onde entrarão em contacto com diversas tecnologias e
               conceitos que não intervêm no percurso académico, focando-se
@@ -49,19 +52,13 @@ const About = () => {
               skills.
             </p>
           </Col>
-          <Col xs="12" lg="6">
-            <Row className={AboutStyles.imageContainer}>
-              {data.allFile.edges.map((pic, i) => (
-                <Col
-                  className={`d-flex justify-content-center align-items-${flex[i]}`}
-                  key={pic.node.id}
-                >
-                  <Img fixed={pic.node.childImageSharp.fixed} />
-                </Col>
-              ))}
-            </Row>
-          </Col>
         </Row>
+        <div
+          className={AboutStyles.countDownContainer}
+        >
+          <Countdown />
+        </div>
+
       </Container>
     </div>
   )
