@@ -17,8 +17,19 @@
   top: 58.5px;
 }
 
-.countdownContainer{
-  
+.countDownContainer{
+  background-color: #FF1951;
+  padding: 1rem;
+  padding-right: 2.5rem;
+  width: 40rem;
+  margin: auto;
+  margin-top: 10rem;
+  font-size: 1.5pc;
+}
+
+.CountdownRow {
+  display: block;
+  text-align: center;
 }
 
 .aboutContainer .countdownContainer .number {

@@ -53,13 +53,12 @@ const About = () => {
             </p>
           </Col>
         </Row>
-        <div
-          className={AboutStyles.countDownContainer}
+      </Container>
+      <div
+          className={[AboutStyles.countDownContainer]}
         >
           <Countdown />
         </div>
-
-      </Container>
     </div>
   )
 }
