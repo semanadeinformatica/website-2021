@@ -3,7 +3,8 @@
 .aboutContainer {
   background-color: #FF8451;
   color: var(--white);
-  padding: 7rem 0 4rem 0;
+  padding: 2rem 0 0rem 0;
+  padding-bottom: 2rem;
 }
 
 .aboutContainer .title {
@@ -11,19 +12,17 @@
   padding-bottom: 20px;
 }
 
-.aboutContainer .countdownContainer {
-  background-color: var(--color4);
-  position: relative;
-  top: 58.5px;
+.CountdownBackground{
+  background: linear-gradient(180deg, rgba(255,132,81,1) 0%, rgba(255,132,81,1) 50%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%);
 }
 
 .countDownContainer{
+  color: white;
   background-color: #FF1951;
   padding: 1rem;
   padding-right: 2.5rem;
   width: 40rem;
   margin: auto;
-  margin-top: 10rem;
   font-size: 1.5pc;
 }
 
@@ -32,17 +31,6 @@
   text-align: center;
 }
 
-.aboutContainer .countdownContainer .number {
-  font-size: 40px;
-  font-weight: bold;
-  text-align: center;
-  line-height: 0.9;
-}
-
-.aboutContainer .countdownContainer .timeType {
-  text-align: center;
-  font-size: 18px;
-}
 
 .aboutContainer p a {
   color: var(--white);

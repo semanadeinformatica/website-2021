@@ -70,7 +70,7 @@ const Speakers = () => {
           ))}
         </Carousel>
         <Link className={speakersStyles.allLink} to="/speakers">
-          Ver todos os speakers
+          <span className={speakersStyles.allLinkText}> Ver todos os speakers</span> <span className={speakersStyles.arrow}>&#8594;</span> 
         </Link>
       </section>
     )

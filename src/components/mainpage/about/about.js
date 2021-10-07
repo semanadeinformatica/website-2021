@@ -15,6 +15,7 @@ const About = () => {
   const flex = ["start", "center", "end"]
 
   return (
+    <div>
     <div className={AboutStyles.aboutContainer} id="sobre-nos">
       <Container>
         <h2 className={mainStyles.h2}>
@@ -54,11 +55,13 @@ const About = () => {
           </Col>
         </Row>
       </Container>
-      <div
-          className={[AboutStyles.countDownContainer]}
+    </div>
+      <div className={[AboutStyles.CountdownBackground]}>
+        <div className={[AboutStyles.countDownContainer]}
         >
-          <Countdown />
+        <Countdown />
         </div>
+      </div>
     </div>
   )
 }
