@@ -1,5 +1,4 @@
 import React from "react"
-import Img from "gatsby-image"
 import Container from "react-bootstrap/Container"
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
@@ -8,15 +7,12 @@ import AboutStyles from "../../../styles/mainpage/about.module.css"
 import mainStyles from "../../../styles/mainpage/mainpage.module.css"
 import Countdown from "../countdown/countdown"
 
-import { useAboutUsImages } from "../../hooks/about-us-query"
 
 const About = () => {
-  const data = useAboutUsImages()
-  const flex = ["start", "center", "end"]
 
   return (
-    <div>
-    <div className={AboutStyles.aboutContainer} id="sobre-nos">
+    <div id="sobre-nos">
+    <div className={AboutStyles.aboutContainer} >
       <Container>
         <h2 className={mainStyles.h2}>
           Sobre nós

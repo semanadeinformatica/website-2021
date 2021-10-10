@@ -59,10 +59,10 @@
 }
 
 .section {
-  background-color: var(--color5);
+  background-image: url("/images/foto1.png");
   text-align: center;
   color: var(--white);
-  padding: 10rem 20%;
+  padding: 15rem 20%;
 }
 
 @media (max-width: 900px) {
