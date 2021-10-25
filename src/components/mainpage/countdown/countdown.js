@@ -3,23 +3,52 @@ import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
 import AboutStyles from "../../../styles/mainpage/about.module.css"
 
-var countDownDate = new Date("Nov 15, 2021 00:00:00").getTime();
 
-var now = new Date().getTime();
+class Countdown extends React.Component {
+  state = {
+    days: 0,
+    hours:0,
+    minutes:0,
+    seconds:0
+  }
+  countDownDate;
 
-var distance = countDownDate - now;
+  constructor(){
+    super();
+    this.countDownDate = new Date("Nov 15, 2021 00:00:00").getTime();
+    this.updateRemainingTime();
+  }
 
-var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  updateRemainingTime() {
 
-const Countdown = () => {
-  return (
+    var now = new Date().getTime();
+
+    var distance = this.countDownDate - now;
+    
+    this.setState({
+      days: Math.floor(distance / (1000 * 60 * 60 * 24)),
+      hours: Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+      minutes: Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)),
+      seconds:Math.floor((distance % (1000 * 60)) / 1000)
+    });
+
+  }
+
+  componentDidMount() {
+    this.interval = setInterval(()=>{
+      this.updateRemainingTime();
+    },1000);
+  }
+  componentWillUnmount() {
+    clearInterval(this.interval);
+  }
+
+  render(){
+    return (
       <Row>
       <Col>
         <Row className={AboutStyles.CountdownRow}>
-          {days}
+          {this.state.days}
         </Row>
         <Row className={AboutStyles.CountdownRow}>
           Days
@@ -28,7 +57,7 @@ const Countdown = () => {
 
       <Col>
         <Row className={AboutStyles.CountdownRow}>
-          {hours}
+          {this.state.hours}
         </Row>
         <Row className={AboutStyles.CountdownRow}>
           Hours
@@ -37,7 +66,7 @@ const Countdown = () => {
 
       <Col>
         <Row className={AboutStyles.CountdownRow}>
-          {minutes}
+          {this.state.minutes}
         </Row>
         <Row className={AboutStyles.CountdownRow}>
           Minutes
@@ -46,7 +75,7 @@ const Countdown = () => {
 
       <Col>
         <Row className={AboutStyles.CountdownRow}>
-          {seconds}
+          {this.state.seconds}
         </Row>
         <Row className={AboutStyles.CountdownRow}>
           Seconds
@@ -54,6 +83,7 @@ const Countdown = () => {
       </Col>
       </Row>
   )
+  }
 }
 
 export default Countdown
