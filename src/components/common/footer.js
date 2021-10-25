@@ -1,6 +1,6 @@
-import React from "react"
+import React from "react";
 
-import FooterStyles from "../../styles/common/footer.module.css"
+import FooterStyles from "../../styles/common/footer.module.css";
 
 const Footer = ({ darkMode }) => (
   <div
@@ -8,8 +8,8 @@ const Footer = ({ darkMode }) => (
       darkMode ? FooterStyles.dark : FooterStyles.light
     } py-2 py-sm-3 text-center`}
   >
-    Copyright © 2020 niaefeup, todos os direitos reservados
+    Copyright © 2021 niaefeup, todos os direitos reservados
   </div>
-)
+);
 
-export default Footer
+export default Footer;

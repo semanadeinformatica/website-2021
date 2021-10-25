@@ -1,38 +1,38 @@
-import React from "react"
-import Container from "react-bootstrap/Container"
-import Col from "react-bootstrap/Col"
+import React from "react";
+import Container from "react-bootstrap/Container";
+import Col from "react-bootstrap/Col";
 import {
   FaEnvelope,
   FaLinkedin,
   FaFacebookSquare,
-  FaInstagramSquare,
-} from "react-icons/fa"
+  FaInstagramSquare
+} from "react-icons/fa";
 
-import ContactStyles from "../../../styles/mainpage/contacts.module.css"
-import mainStyles from "../../../styles/mainpage/mainpage.module.css"
+import ContactStyles from "../../../styles/mainpage/contacts.module.css";
+import mainStyles from "../../../styles/mainpage/mainpage.module.css";
 
 const links = [
   {
     icon: <FaEnvelope />,
     href: "mailto:geral@sinf.pt",
-    text: "geral@sinf.pt",
+    text: "geral@sinf.pt"
   },
   {
     icon: <FaLinkedin />,
     href: "https://www.linkedin.com/company/sinffeup/",
-    text: "sinffeup",
+    text: "sinffeup"
   },
   {
     icon: <FaFacebookSquare />,
     href: "https://facebook.com/sinfFEUP",
-    text: "sinffeup",
+    text: "sinffeup"
   },
   {
     icon: <FaInstagramSquare />,
     href: "https://instagram.com/sinfFEUP",
-    text: "sinffeup",
-  },
-]
+    text: "sinffeup"
+  }
+];
 
 const Contacts = () => (
   <Col className={ContactStyles.title_container}>
@@ -49,12 +49,12 @@ const Contacts = () => (
             key={link.href}
           >
             <span className={ContactStyles.icon}>{link.icon}</span>
-            {link.text}
+            <span className="h5">{link.text}</span>
           </a>
         ))}
       </div>
     </Container>
   </Col>
-)
+);
 
-export default Contacts
+export default Contacts;

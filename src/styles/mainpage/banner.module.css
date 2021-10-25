@@ -8,11 +8,11 @@
   color: white;
 }
 
-.gradient{
-  background-color:#FC08BC;
-  background-image: radial-gradient(circle at top right,#FF8451, #FC08BC);
+.gradient {
+  background-color: #fc08bc;
+  background-image: radial-gradient(circle at top right, #ff8451, #fc08bc);
   width: auto;
-  height: 50em;
+  height: 100vh;
 }
 
 .banner_info {
