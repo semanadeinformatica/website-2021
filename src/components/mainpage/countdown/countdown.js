@@ -3,12 +3,23 @@ import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
 import AboutStyles from "../../../styles/mainpage/about.module.css"
 
+var countDownDate = new Date("Nov 15, 2021 00:00:00").getTime();
+
+var now = new Date().getTime();
+
+var distance = countDownDate - now;
+
+var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
 const Countdown = () => {
   return (
       <Row>
       <Col>
         <Row className={AboutStyles.CountdownRow}>
-          3
+          {days}
         </Row>
         <Row className={AboutStyles.CountdownRow}>
           Days
@@ -17,7 +28,7 @@ const Countdown = () => {
 
       <Col>
         <Row className={AboutStyles.CountdownRow}>
-          3
+          {hours}
         </Row>
         <Row className={AboutStyles.CountdownRow}>
           Hours
@@ -26,7 +37,7 @@ const Countdown = () => {
 
       <Col>
         <Row className={AboutStyles.CountdownRow}>
-          3
+          {minutes}
         </Row>
         <Row className={AboutStyles.CountdownRow}>
           Minutes
@@ -35,7 +46,7 @@ const Countdown = () => {
 
       <Col>
         <Row className={AboutStyles.CountdownRow}>
-          3
+          {seconds}
         </Row>
         <Row className={AboutStyles.CountdownRow}>
           Seconds
