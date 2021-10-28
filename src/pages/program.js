@@ -1,17 +1,13 @@
-import React, { useState } from "react"
-import { graphql } from "gatsby"
-import Tab from "react-bootstrap/Tab"
-
-import Layout from "../components/common/layout"
-import SEO from "../components/common/seo"
-
-import ProgramNav from "../components/program/ProgramNav"
-import DailySchedule from "../components/program/DailySchedule"
-import PageBanner from "../components/utils/page_banner"
-
-import programStyles from "../styles/program/program.module.css"
-
-import { splitDays } from "../utils/programUtils"
+import { graphql } from "gatsby";
+import React, { useState } from "react";
+import Tab from "react-bootstrap/Tab";
+import Layout from "../components/common/layout";
+import SEO from "../components/common/seo";
+import DailySchedule from "../components/program/DailySchedule";
+import ProgramNav from "../components/program/ProgramNav";
+import PageBanner from "../components/utils/page_banner";
+import programStyles from "../styles/program/program.module.css";
+import { splitDays } from "../utils/programUtils";
 
 export const eventsQuery = graphql`
   query Events {
@@ -54,17 +50,17 @@ export const eventsQuery = graphql`
       }
     }
   }
-`
+`;
 
 const ProgramPage = ({ data }) => {
-  const [activeTab, setActiveTab] = useState(data.allThemesJson.edges[0].node)
-  const days = splitDays(data)
+  const [activeTab, setActiveTab] = useState(data.allThemesJson.edges[0].node);
+  const days = splitDays(data);
 
   const toggle = tab => {
-    if (activeTab !== tab) setActiveTab(tab)
-  }
+    if (activeTab !== tab) setActiveTab(tab);
+  };
 
-  console.log(activeTab)
+  console.log(activeTab);
 
   return (
     <Layout darkFooter={true}>
@@ -94,7 +90,7 @@ const ProgramPage = ({ data }) => {
         </Tab.Container>
       </div>
     </Layout>
-  )
-}
+  );
+};
 
-export default ProgramPage
+export default ProgramPage;

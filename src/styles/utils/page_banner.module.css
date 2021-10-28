@@ -8,11 +8,7 @@
 
   text-align: center;
 
-  background: linear-gradient(
-    rgba(255, 52, 31, 1) 0%,
-    rgba(255, 113, 31, 1) 60%,
-    rgba(255, 160, 0, 1) 100%
-  );
+  background: linear-gradient(180deg, #fc08bc 0%, #ff8451 100%);
 
   color: var(--white);
 }

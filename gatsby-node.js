@@ -4,18 +4,18 @@
  * See: https://www.gatsbyjs.org/docs/node-apis/
  */
 
-const path = require("path")
+const path = require("path");
 
 exports.createPages = ({ actions, graphql }) => {
-  const { createPage } = actions
+  const { createPage } = actions;
 
   const templates = {
     talks: path.resolve("src/templates/talk.js"),
     sessions: path.resolve("src/templates/session.js"),
     panels: path.resolve("src/templates/session.js"),
     visits: path.resolve("src/templates/session.js"),
-    workshops: path.resolve("src/templates/talk.js"),
-  }
+    workshops: path.resolve("src/templates/talk.js")
+  };
 
   return graphql(`
     {
@@ -34,18 +34,18 @@ exports.createPages = ({ actions, graphql }) => {
     }
   `).then(res => {
     if (res.errors) {
-      return Promise.reject(res.errors)
+      return Promise.reject(res.errors);
     }
 
     res.data.allMarkdownRemark.edges.forEach(({ node }) => {
       if (node.frontmatter.path) {
-        let type = node.frontmatter.path.match(/(?<=\/)\w*(?=\/)/)[0]
+        let type = node.frontmatter.path.match(/(?<=\/)\w*(?=\/)/)[0];
 
         createPage({
           path: node.frontmatter.path,
-          component: templates[type],
-        })
+          component: templates[type]
+        });
       }
-    })
-  })
-}
+    });
+  });
+};

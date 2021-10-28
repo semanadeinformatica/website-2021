@@ -11,12 +11,12 @@
 }
 
 .dark {
-  background-color: var(--color5);
+  background-color: #0b2f46;
   color: var(--white);
 }
 
 .footerContainer.dark {
-  background-color: var(--color5);
+  background-color: #0b2f46;
   color: var(--white);
 }
 

@@ -1,10 +1,8 @@
-import React from "react"
-
-import SEO from "../components/common/seo"
-import Layout from "../components/common/layout"
-
-import Competition from "../components/competition/competition"
-import PageBanner from "../components/utils/page_banner"
+import React from "react";
+import Layout from "../components/common/layout";
+import SEO from "../components/common/seo";
+import Competition from "../components/competition/competition";
+import PageBanner from "../components/utils/page_banner";
 
 const CompetitionPage = () => (
   <Layout darkFooter>
@@ -14,6 +12,6 @@ const CompetitionPage = () => (
     </PageBanner>
     <Competition />
   </Layout>
-)
+);
 
-export default CompetitionPage
+export default CompetitionPage;

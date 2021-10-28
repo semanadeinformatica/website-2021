@@ -1,15 +1,14 @@
-import React from "react"
-import { Link } from "gatsby"
-import Navbar from "react-bootstrap/Navbar"
-import Nav from "react-bootstrap/Nav"
-import Dropdown from "react-bootstrap/Dropdown"
-import { NavItem, NavLink } from "react-bootstrap"
-
-import Logo from "../../images/svg/logo_sinf_simp.inline.svg"
-import NavbarStyles from "../../styles/common/navbar.module.css"
+import { Link } from "gatsby";
+import React from "react";
+import { NavItem, NavLink } from "react-bootstrap";
+import Dropdown from "react-bootstrap/Dropdown";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import Logo from "../../images/svg/logo_sinf_simp.inline.svg";
+import NavbarStyles from "../../styles/common/navbar.module.css";
 
 const NavWrapper = ({ links, className, closeDrawer, children }) => (
-  <Nav className={className}>
+  <Nav className={`${className}`}>
     {links.map(({ internal, url, text }) => (
       <Nav.Item className="px-2" key={text}>
         {internal ? (
@@ -30,83 +29,88 @@ const NavWrapper = ({ links, className, closeDrawer, children }) => (
     ))}
     {children}
   </Nav>
-)
+);
 
 export default class NavBar extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
 
-    this.toggle = this.toggle.bind(this)
-    this.fixed = props.fixed
-    this.transparent = props.transparent
-    this.logo = props.logo
+    this.toggle = this.toggle.bind(this);
+    this.fixed = props.fixed;
+    this.transparent = props.transparent;
+    this.logo = props.logo;
     this.state = {
-      isOpen: false,
-    }
+      isOpen: false
+    };
 
     this.leftLinks = [
       {
         url: "/#sobre-nos",
         text: "Sobre nós",
-        internal: true,
+        internal: true
       },
       {
         url: "/#speakers",
         text: "Speakers",
-        internal: true,
+        internal: true
       },
       {
         url: "/#sponsors",
         text: "Sponsors",
-        internal: true,
+        internal: true
       },
       {
         url: "/#tickets",
         text: "Bilhetes",
-        internal: true,
+        internal: true
       },
       {
         url: "/#contactos",
         text: "Contactos",
-        internal: true,
-      },
-    ]
+        internal: true
+      }
+    ];
 
     this.rightLinks = [
       {
         url: "/program",
         text: "Programa",
-        internal: true,
+        internal: true
       },
       {
         url: "/equipa",
         text: "Equipa",
-        internal: true,
+        internal: true
       },
       {
         url: "/competicao-programacao",
         text: "Competição",
-        internal: true,
+        internal: true
       },
-    ]
+      {
+        url: "/atividades",
+        text: "Atividades",
+        internal: true
+      }
+    ];
 
     this.pastEditions = [
       { url: "https://2020.sinf.pt", year: "2020" },
       { url: "https://2019.sinf.pt", year: "2019" },
-      { url: "https://2018.sinf.pt", year: "2018" },
-    ]
+      { url: "https://2018.sinf.pt", year: "2018" }
+    ];
   }
 
   closeDrawer = () => {
     this.setState({
-      isOpen: false,
-    })
-  }
+      isOpen: false
+    });
+  };
 
   toggle() {
     this.setState({
-      isOpen: !this.state.isOpen,
-    })
+      isOpen: !this.state.isOpen
+    });
   }
 
   render() {
@@ -115,16 +119,15 @@ export default class NavBar extends React.Component {
         <Navbar
           fixed={this.fixed ? "top" : ""}
           expand="lg"
-          className={
-            NavbarStyles.navbar +
-            (this.transparent && !this.state.isOpen
-              ? " " + NavbarStyles.noBackground
-              : "")
-          }
+          className={`py-0 ${NavbarStyles.navbar} ${
+            this.transparent && !this.state.isOpen
+              ? NavbarStyles.noBackground
+              : ``
+          }`}
         >
-          <Navbar.Collapse className=" w-100 order-1 order-lg-0 dual-collapse2">
+          <Navbar.Collapse className="w-100 order-1 order-lg-0 dual-collapse2">
             <NavWrapper
-              className="ml-0 align-items-center"
+              className={`${NavbarStyles.background} ml-0 align-items-center`}
               links={this.leftLinks}
               closeDrawer={this.closeDrawer}
             />
@@ -136,22 +139,25 @@ export default class NavBar extends React.Component {
           ) : (
             ""
           )}
-          <Navbar.Collapse className="w-100 order-3 dual-collapse2">
+          <Navbar.Collapse className="w-100 order-3 dual-collapse2 flex-row-reverse">
             <NavWrapper
-              className="ml-auto align-items-center"
+              className={`${NavbarStyles.background} align-items-center`}
               links={this.rightLinks}
               closeDrawer={this.closeDrawer}
             >
               <Dropdown as={NavItem}>
-                <Dropdown.Toggle as={NavLink} className={NavbarStyles.navLink}>
-                  Edições anteriores
+                <Dropdown.Toggle
+                  as={NavLink}
+                  className={`${NavbarStyles.navLink} border-start border-white ps-1`}
+                >
+                  &nbsp;Edições anteriores
                 </Dropdown.Toggle>
                 <Dropdown.Menu>
                   {this.pastEditions.map(({ url, year }) => (
                     <Dropdown.Item
                       key={year}
                       href={url}
-                      className={NavbarStyles.dropdownLink}
+                      className={`${NavbarStyles.dropdownLink}`}
                     >
                       {year}
                     </Dropdown.Item>
@@ -166,6 +172,6 @@ export default class NavBar extends React.Component {
           />
         </Navbar>
       </div>
-    )
+    );
   }
 }

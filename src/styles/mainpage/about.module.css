@@ -1,7 +1,7 @@
 @import "../common/palette.css";
 
 .aboutContainer {
-  background-color: #FF8451;
+  background-color: #ff8451;
   color: var(--white);
   padding: 5rem 0 0rem 0;
   padding-bottom: 2rem;
@@ -12,13 +12,20 @@
   padding-bottom: 20px;
 }
 
-.CountdownBackground{
-  background: linear-gradient(180deg, rgba(255,132,81,1) 0%, rgba(255,132,81,1) 50%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%);
+.CountdownBackground {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 132, 81, 1) 0%,
+    rgba(255, 132, 81, 1) 50%,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(255, 255, 255, 1) 100%
+  );
 }
 
-.countDownContainer{
+.countDownContainer {
   color: white;
-  background-color: #FF1951;
+  background-color: #ff1951;
+  border-radius: 0.5rem;
   padding: 1rem;
   padding-right: 2.5rem;
   width: 40rem;
@@ -30,7 +37,6 @@
   display: block;
   text-align: center;
 }
-
 
 .aboutContainer p a {
   color: var(--white);

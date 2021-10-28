@@ -1,5 +1,5 @@
 @import "./palette.css";
-@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@import url("https://nts.googleapis.com/css?family=Roboto&display=swap");
 
 .logo {
   height: 1.4rem;
@@ -9,11 +9,16 @@
   fill: white;
 }
 
+.background {
+  background-color: rgb(252, 8, 188, 0.9) !important;
+}
+
 .navbar {
   background-color: #fc08bc;
   font-family: "Roboto", sans-serif;
   padding: 0.4rem 1rem;
-  box-shadow: 0px 0px 10px black;
+  /* box-shadow: 0px 0px 10px black; */
+  /* maybe keep this idk */
   height: 4rem;
 }
 
@@ -31,6 +36,8 @@
   overflow: hidden;
   text-overflow: ellipsis;
   border-bottom: 2px transparent solid;
+  border: 0;
+  padding: 0.2rem 0 !important;
 }
 
 .dropdownLink {
@@ -42,11 +49,18 @@
   border-color: var(--white);
 }
 
+.navLink:hover {
+  opacity: 70%;
+  transform: translateY(-2px);
+  transition: 0.2s ease;
+}
+
 .toggler {
   position: absolute;
   top: 1px;
   right: 0.1rem;
   border: none;
+  margin-top: 0.5rem;
 }
 
 .toggler span {
