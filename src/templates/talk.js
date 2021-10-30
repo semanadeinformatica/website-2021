@@ -1,25 +1,29 @@
-import React from "react"
-import { graphql } from "gatsby"
-import Container from "react-bootstrap/Container"
+import React from "react";
+import { graphql } from "gatsby";
+import Container from "react-bootstrap/Container";
 
-import Layout from "../components/common/layout"
-import SEO from "../components/common/seo"
-import Speaker from "../components/talk/speaker"
-import Description from "../components/talk/description"
-import Participate from "../components/utils/participate"
-import Partnership from "../components/talk/partnership"
+import Layout from "../components/common/layout";
+import SEO from "../components/common/seo";
+import Speaker from "../components/talk/speaker";
+import Description from "../components/talk/description";
+import Participate from "../components/utils/participate";
+import Partnership from "../components/talk/partnership";
 
-import TalkStyles from "../styles/talk/talk.module.css"
+import TalkStyles from "../styles/talk/talk.module.css";
 
 export default function Template({ data }) {
-  const { markdownRemark: talk } = data
-  const info = { ...talk.frontmatter }
+  const { markdownRemark: talk } = data;
+  const info = { ...talk.frontmatter };
 
   return (
     <Layout darkFooter>
       <SEO title={info.title} />
       <Container fluid className={TalkStyles.container}>
-        <Speaker data={info.speakers[0]} />
+        <div>
+          {info.speakers.map(speaker => (
+            <div>{<Speaker data={speaker}></Speaker>}</div>
+          ))}
+        </div>
         {info.partnership ? (
           <Partnership partnership={info.partnership[0]} />
         ) : (
@@ -31,7 +35,7 @@ export default function Template({ data }) {
       </Container>
       {info.registration ? <Participate link={info.registration} /> : ""}
     </Layout>
-  )
+  );
 }
 
 export const talkQuery = graphql`
@@ -69,4 +73,4 @@ export const talkQuery = graphql`
       }
     }
   }
-`
+`;

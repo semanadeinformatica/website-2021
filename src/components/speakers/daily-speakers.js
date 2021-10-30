@@ -1,33 +1,33 @@
-import React from "react"
+import React from "react";
 
-import SingleSpeaker from "./single-speaker"
+import SingleSpeaker from "./single-speaker";
 
-import SpeakersStyles from "../../styles/speakers/speakers.module.css"
+import SpeakersStyles from "../../styles/speakers/speakers.module.css";
 
 const getSpeakers = talks => {
-  const speakers = []
+  const speakers = [];
 
   talks
     .filter(({ node }) => node.frontmatter.type !== "Placeholder")
     .forEach(({ node }) => {
       node.frontmatter.speakers.forEach(speaker => {
-        speaker.path = node.frontmatter.path
-        speakers.push(speaker)
-      })
-    })
+        speaker.path = node.frontmatter.path;
+        speakers.push(speaker);
+      });
+    });
 
-  return speakers
-}
+  return speakers;
+};
 
 const DailySpeakers = ({ talks }) => {
-  const speakers = getSpeakers(talks)
-  const date = new Date(talks[0].node.frontmatter.day)
+  const speakers = getSpeakers(talks);
+  const date = new Date(talks[0].node.frontmatter.day);
 
   return (
     <div className={SpeakersStyles.dailyContainer}>
       <div className={SpeakersStyles.dayDescription + " mb-3"}>
         <h2 className={SpeakersStyles.date}>
-          {date.getDate() + " de Outubro"}
+          {date.getDate() + " de novembro"}
         </h2>
         <svg width="140" height="3">
           <rect width="140" height="3" style={{ fill: "#350052" }} />
@@ -45,7 +45,7 @@ const DailySpeakers = ({ talks }) => {
         ))}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default DailySpeakers
+export default DailySpeakers;
