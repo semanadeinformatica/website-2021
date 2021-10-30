@@ -19,7 +19,7 @@ const Tickets = () => (
 
           <Col>
             <Row className={`h1 ${AboutStyles.CountdownRow}`}>03</Row>
-            <Row className={`h4 ${AboutStyles.CountdownRow}`}>Plaestras</Row>
+            <Row className={`h4 ${AboutStyles.CountdownRow}`}>Palestras</Row>
           </Col>
 
           <Col>

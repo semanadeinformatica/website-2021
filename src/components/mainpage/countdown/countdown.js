@@ -44,22 +44,22 @@ class Countdown extends React.Component {
       <Row>
         <Col>
           <Row className={AboutStyles.CountdownRow}>{this.state.days}</Row>
-          <Row className={AboutStyles.CountdownRow}>Days</Row>
+          <Row className={AboutStyles.CountdownRow}>Dias</Row>
         </Col>
 
         <Col>
           <Row className={AboutStyles.CountdownRow}>{this.state.hours}</Row>
-          <Row className={AboutStyles.CountdownRow}>Hours</Row>
+          <Row className={AboutStyles.CountdownRow}>Horas</Row>
         </Col>
 
         <Col>
           <Row className={AboutStyles.CountdownRow}>{this.state.minutes}</Row>
-          <Row className={AboutStyles.CountdownRow}>Minutes</Row>
+          <Row className={AboutStyles.CountdownRow}>Minutos</Row>
         </Col>
 
         <Col>
           <Row className={AboutStyles.CountdownRow}>{this.state.seconds}</Row>
-          <Row className={AboutStyles.CountdownRow}>Seconds</Row>
+          <Row className={AboutStyles.CountdownRow}>Segundos</Row>
         </Col>
       </Row>
     );
