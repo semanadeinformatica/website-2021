@@ -21,7 +21,7 @@ export default function Template({ data }) {
       <Container fluid className={TalkStyles.container}>
         <div>
           {info.speakers.map(speaker => (
-            <div>{<Speaker data={speaker}></Speaker>}</div>
+            <div key={speaker.name}>{<Speaker data={speaker}></Speaker>}</div>
           ))}
         </div>
         {info.partnership ? (

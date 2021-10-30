@@ -18,18 +18,18 @@ const Tickets = () => (
           </Col>
 
           <Col>
-            <Row className={`h1 ${AboutStyles.CountdownRow}`}>03</Row>
+            <Row className={`h1 ${AboutStyles.CountdownRow}`}>08</Row>
             <Row className={`h4 ${AboutStyles.CountdownRow}`}>Palestras</Row>
           </Col>
 
           <Col>
-            <Row className={`h1 ${AboutStyles.CountdownRow}`}>03</Row>
+            <Row className={`h1 ${AboutStyles.CountdownRow}`}>02</Row>
             <Row className={`h4 ${AboutStyles.CountdownRow}`}>Workshops</Row>
           </Col>
 
           <Col>
-            <Row className={`h1 ${AboutStyles.CountdownRow}`}>03</Row>
-            <Row className={`h4 ${AboutStyles.CountdownRow}`}>Visitas</Row>
+            <Row className={`h1 ${AboutStyles.CountdownRow}`}>04</Row>
+            <Row className={`h4 ${AboutStyles.CountdownRow}`}>Painéis</Row>
           </Col>
         </Row>
       </div>
