@@ -1,5 +1,5 @@
 ---
 name: critical
-type: silver
-img: "../../images/sponsors/silver/critical.png"
+type: gold
+img: "../../images/sponsors/gold/Critical.png"
 ---

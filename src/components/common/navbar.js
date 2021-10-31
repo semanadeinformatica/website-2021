@@ -55,13 +55,13 @@ export default class NavBar extends React.Component {
         internal: true
       },
       {
-        url: "/#sponsors",
-        text: "Sponsors",
+        url: "/#tickets",
+        text: "Bilhetes",
         internal: true
       },
       {
-        url: "/#tickets",
-        text: "Bilhetes",
+        url: "/#sponsors",
+        text: "Sponsors",
         internal: true
       },
       {

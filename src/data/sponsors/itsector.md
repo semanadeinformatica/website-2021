@@ -1,5 +1,5 @@
 ---
 name: itsector
 type: silver
-img: "../../images/sponsors/silver/itsector.png"
+img: "../../images/sponsors/silver/ITSector.jpg"
 ---

@@ -3,6 +3,8 @@ import React from "react";
 import BasicInfo from "./basic-info";
 import Carousel from "react-bootstrap/Carousel";
 
+import Background from "../../../images/gradient-cover-background.png";
+
 import BannerStyles from "../../../styles/mainpage/banner.module.css";
 import Icon from "../../../images/svg/logo_sinf_comp.inline.svg";
 
@@ -35,7 +37,7 @@ const Banner = () => {
             ].join(" ")}
             key={pic.node.id}
           >
-            <div className={BannerStyles.gradient}></div>
+            <img src={Background} />
           </Carousel.Item>
         ))}
       </Carousel>

@@ -25,7 +25,7 @@
 .countDownContainer {
   color: white;
   background-color: var(--color3);
-  border-radius: 0.5rem;
+  /*border-radius: 0.5rem;*/
   padding: 1rem;
   padding-right: 2.5rem;
   width: 40rem;

@@ -10,11 +10,7 @@
 
 .gradient {
   background-color: var(--color1);
-  background-image: radial-gradient(
-    circle at top right,
-    var(--color2),
-    var(--color1)
-  );
+  background-image: url(${process.env.});
   width: auto;
   height: 100vh;
 }
@@ -68,7 +64,6 @@
   font-weight: 500;
   padding: 1rem;
   margin-top: 0rem;
-  background-color: rgb(0, 0, 0, 0.2);
   border-radius: 0.5rem;
 }
 

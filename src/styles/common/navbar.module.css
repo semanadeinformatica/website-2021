@@ -18,7 +18,7 @@
   font-family: "Roboto", sans-serif;
   padding: 0.4rem 1rem;
   box-shadow: 0px 0px 10px #333;
-  height: 4rem;
+  height: 3rem;
 }
 
 .noBackground {
@@ -68,7 +68,8 @@
 
 @media (min-width: 980px) and (max-width: 1400px) {
   .navLink {
-    font-size: small;
+    font-size: 1em;
+    margin-right: 2em;
   }
 }
 

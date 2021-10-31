@@ -9,7 +9,7 @@ const Tickets = () => (
   <section id="tickets" className={ticketsStyles.section}>
     <Container>
       <div
-        className={`rounded border border-4 border-white px-2 py-4 ${ticketsStyles.CountdownContainer}`}
+        className={`border border-5 border-white px-2 py-4 ${ticketsStyles.CountdownContainer}`}
       >
         <Row>
           <Col>
