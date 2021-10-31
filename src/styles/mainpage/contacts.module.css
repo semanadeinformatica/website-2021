@@ -51,6 +51,7 @@ div.location_col {
 .link {
   display: flex;
   align-items: baseline;
+  text-decoration: none;
 }
 
 .location_link {
@@ -71,13 +72,13 @@ div.location_col {
 
 .icon {
   margin-right: 0.6em;
-  font-size: 1.6em;
+  font-size: 2em;
 }
 
 .linkContainer {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 0 10rem;
+  grid-template-columns: 1fr 0fr;
+  padding: 0 5rem;
 }
 
 @media (max-width: 767.98px) {
@@ -86,7 +87,7 @@ div.location_col {
   }
 
   div.info_row {
-    margin: 0 2em;
+    margin: 0 1em;
   }
 
   .linkContainer {
