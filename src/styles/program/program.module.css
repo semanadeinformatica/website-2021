@@ -18,8 +18,8 @@
   width: 75%;
   height: 2px;
   margin: 0.2rem auto;
-  color: #361784;
-  background-color: #361784;
+  color: var(--color5);
+  background-color: var(--color5);
 }
 
 .innerTab {
@@ -29,11 +29,11 @@
 }
 
 .innerTab:hover {
-  color: #361784 !important;
+  color: var(--color5) !important;
 }
 
 .innerTab.active {
-  color: #361784 !important;
+  color: var(--color5) !important;
 }
 
 .navItem {
@@ -44,7 +44,7 @@
 
 .navItemWrapper {
   position: relative;
-  border-bottom: 5px solid var(--white);
+  border-bottom: 5px solid white;
   padding: 0.4rem 0.4rem;
   cursor: pointer;
 }
@@ -67,7 +67,7 @@
   margin: 0 auto;
   left: 0;
   right: 0;
-  background-color: var(--color2);
+  background-color: var(--color1);
 }
 
 .navItem :first-child {
@@ -88,7 +88,7 @@
 
 .navItemWrapper:hover,
 .navItemWrapper.active {
-  border-color: var(--color2) !important;
+  border-color: var(--color1) !important;
 }
 
 .navItemWrapper:hover:after,
@@ -98,8 +98,8 @@
 
 .themeHeader {
   display: inline-block;
-  color: var(--white);
-  background-color: var(--color2);
+  color: white;
+  background-color: var(--color1);
   padding: 1.5rem 2rem;
   border-radius: 0 0px 10px 10px;
   margin-top: 0.5rem;

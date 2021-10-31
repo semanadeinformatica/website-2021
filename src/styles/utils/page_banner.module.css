@@ -8,9 +8,9 @@
 
   text-align: center;
 
-  background: linear-gradient(180deg, #fc08bc 0%, #ff8451 100%);
+  background: linear-gradient(180deg, var(--color1) 0%, var(--color2) 100%);
 
-  color: var(--white);
+  color: white;
 }
 
 .container > svg {

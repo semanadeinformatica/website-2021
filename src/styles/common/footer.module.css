@@ -6,18 +6,13 @@
 }
 
 .light {
-  background-color: var(--white);
+  background-color: white;
   color: var(--color5);
 }
 
 .dark {
-  background-color: #0b2f46;
-  color: var(--white);
-}
-
-.footerContainer.dark {
-  background-color: #0b2f46;
-  color: var(--white);
+  background-color: var(--color5);
+  color: white;
 }
 
 @media screen and (max-width: 576px) {

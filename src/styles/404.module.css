@@ -39,7 +39,7 @@
 
 .btn:hover {
   text-decoration: none;
-  color: var(--white);
+  color: white;
   background-color: var(--color1);
 }
 

@@ -1,12 +1,12 @@
-import React from "react"
-import { IconContext } from "react-icons"
+import React from "react";
+import { IconContext } from "react-icons";
 
-import icons from "../utils/icons"
-import programStyles from "../../styles/program/program.module.css"
+import icons from "../utils/icons";
+import programStyles from "../../styles/program/program.module.css";
 
 const DayNavItem = ({ icon, date, day, active }) => (
   <div className={programStyles.navItem}>
-    <IconContext.Provider value={{ color: "#350052", size: "2em" }}>
+    <IconContext.Provider value={{ color: "#0b2f46", size: "2em" }}>
       <div>{icons[icon]}</div>
     </IconContext.Provider>
     <div className={programStyles.navItemText}>
@@ -14,6 +14,6 @@ const DayNavItem = ({ icon, date, day, active }) => (
       <span>{date}</span>
     </div>
   </div>
-)
+);
 
-export default DayNavItem
+export default DayNavItem;

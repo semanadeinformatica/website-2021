@@ -8,10 +8,10 @@ div.member_container {
 .name {
   font-weight: bold;
   font-size: 1.4em;
-  color: #212020;
+  color: var(--color5);
 }
 
 .name:hover,
 .name:active {
-  color: #212020;
+  color: var(--color5);
 }

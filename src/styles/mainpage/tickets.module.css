@@ -2,7 +2,7 @@
 @import "../common/palette.css";
 
 .wrapper {
-  border: 4px var(--white) solid;
+  border: 4px white solid;
   border-radius: 10px;
   background: transparent;
   list-style: none;
@@ -57,7 +57,7 @@
 .section {
   background-image: url("../../images/showcase/foto1.png");
   text-align: center;
-  color: var(--white);
+  color: white;
   padding: 15rem 20%;
   width: 100%;
   height: auto;

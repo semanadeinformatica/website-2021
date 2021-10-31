@@ -39,7 +39,7 @@
 
   width: 100%;
   background-color: black;
-  background-color: rgba(255, 160, 0, 0.9) !important;
+  background-color: #ff1951e6 !important;
 
   text-align: right;
 
@@ -58,7 +58,7 @@
 
   width: 100%;
   padding-left: 0.7em;
-  background-color: rgba(255, 52, 31, 0.9) !important;
+  background-color: #fc08bce6 !important;
 
   -webkit-clip-path: polygon(0% 0%, 100% 67%, 100% 100%, 0% 100%);
   clip-path: polygon(0% 0%, 100% 67%, 100% 100%, 0% 100%);
@@ -142,21 +142,21 @@
 }
 
 .bg1 {
-  background-color: rgba(255, 52, 31, 0.37);
+  background-color: #fc08bc3e;
 }
 
 .bg2 {
-  background-color: rgba(255, 229, 0, 0.37);
+  background-color: #cdfffc5e;
 }
 
 .bg3 {
-  background-color: rgba(255, 113, 31, 0.37);
+  background-color: #ff84515e;
 }
 
 .bg4 {
-  background-color: rgba(255, 160, 0, 0.37);
+  background-color: #ff19515e;
 }
 
-.container:hover .bg2 {
-  background-color: rgba(255, 229, 0, 0.37);
-}
+/* .container:hover .bg2 {
+  background-color: #ffe5005e;
+} */

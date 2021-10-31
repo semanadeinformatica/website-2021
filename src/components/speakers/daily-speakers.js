@@ -30,7 +30,7 @@ const DailySpeakers = ({ talks }) => {
           {date.getDate() + " de novembro"}
         </h2>
         <svg width="140" height="3">
-          <rect width="140" height="3" style={{ fill: "#350052" }} />
+          <rect width="140" height="3" style={{ fill: "#0b2f46" }} />
         </svg>
       </div>
       <div className={SpeakersStyles.speakersContainer}>

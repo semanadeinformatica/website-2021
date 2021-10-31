@@ -16,5 +16,5 @@
 .container:hover {
   text-decoration: none;
   color: var(--color2);
-  background-color: var(--white);
+  background-color: white;
 }

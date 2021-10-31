@@ -9,7 +9,7 @@
 }
 
 .circle {
-  background-color: #FC08BC;
+  background-color: var(--color1);
   width: 2.2rem;
   height: 2.2rem;
   position: relative;
@@ -29,7 +29,7 @@
   transform: translate(-50%, -50%);
   width: 1rem;
   display: block;
-  color: var(--white);
+  color: white;
 }
 
 .carouselWrapper .button {

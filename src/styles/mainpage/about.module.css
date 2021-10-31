@@ -1,8 +1,8 @@
 @import "../common/palette.css";
 
 .aboutContainer {
-  background-color: #ff8451;
-  color: var(--white);
+  background-color: var(--color2);
+  color: white;
   padding: 5rem 0 0rem 0;
   padding-bottom: 2rem;
 }
@@ -15,16 +15,16 @@
 .CountdownBackground {
   background: linear-gradient(
     180deg,
-    rgba(255, 132, 81, 1) 0%,
-    rgba(255, 132, 81, 1) 50%,
-    rgba(255, 255, 255, 1) 50%,
-    rgba(255, 255, 255, 1) 100%
+    #ff8451 0%,
+    #ff8451 50%,
+    #ffffff 50%,
+    #ffffff 100%
   );
 }
 
 .countDownContainer {
   color: white;
-  background-color: #ff1951;
+  background-color: var(--color3);
   border-radius: 0.5rem;
   padding: 1rem;
   padding-right: 2.5rem;
@@ -39,7 +39,7 @@
 }
 
 .aboutContainer p a {
-  color: var(--white);
+  color: white;
   text-decoration: underline;
 }
 
@@ -58,8 +58,8 @@
   position: absolute;
   bottom: -5px;
   right: 10px;
-  border-bottom: 8px solid var(--white);
-  border-right: 8px solid var(--white);
+  border-bottom: 8px solid white;
+  border-right: 8px solid white;
 }
 
 .imageContainer:before {
@@ -70,8 +70,8 @@
   position: absolute;
   top: -5px;
   left: 10px;
-  border-top: 8px solid var(--white);
-  border-left: 8px solid var(--white);
+  border-top: 8px solid white;
+  border-left: 8px solid white;
 }
 
 @media screen and (max-width: 575px) {

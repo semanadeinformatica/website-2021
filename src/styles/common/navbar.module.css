@@ -10,15 +10,14 @@
 }
 
 .background {
-  background-color: rgb(252, 8, 188, 0.9) !important;
+  background-color: var(--color1) !important;
 }
 
 .navbar {
-  background-color: #fc08bc;
+  background-color: var(--color1);
   font-family: "Roboto", sans-serif;
   padding: 0.4rem 1rem;
-  /* box-shadow: 0px 0px 10px black; */
-  /* maybe keep this idk */
+  box-shadow: 0px 0px 10px #333;
   height: 4rem;
 }
 
@@ -31,7 +30,7 @@
 }
 
 .navLink {
-  color: var(--white) !important;
+  color: white !important;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -46,13 +45,13 @@
 
 .navLink:hover,
 .navLinkActive {
-  border-color: var(--white);
+  border-color: white;
 }
 
 .navLink:hover {
   opacity: 70%;
   transform: translateY(-2px);
-  transition: 0.2s ease;
+  transition: 0.3s ease;
 }
 
 .toggler {
@@ -65,6 +64,12 @@
 
 .toggler span {
   background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgb(255, 255, 255)' stroke-width='1.5' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+@media (min-width: 980px) and (max-width: 1400px) {
+  .navLink {
+    font-size: small;
+  }
 }
 
 @media (max-width: 992px) {
@@ -82,7 +87,7 @@
   }
 
   .navbar > div:first-child {
-    border-top: 1px solid var(--white);
+    border-top: 1px solid white;
     padding-top: 0.5rem;
   }
 }

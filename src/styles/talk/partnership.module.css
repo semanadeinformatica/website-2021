@@ -7,7 +7,7 @@
 }
 
 .titleContainer .underline {
-  border: 2px solid #212020;
+  border: 2px solid var(--color5);
   width: 60%;
 }
 
@@ -25,7 +25,7 @@
 }
 
 .infoContainer .name {
-  color: #212020;
+  color: var(--color5);
 }
 
 .infoContainer .description {

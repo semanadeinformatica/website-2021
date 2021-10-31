@@ -86,11 +86,6 @@ export default class NavBar extends React.Component {
         url: "/competicao-programacao",
         text: "Competição",
         internal: true
-      },
-      {
-        url: "/atividades",
-        text: "Atividades",
-        internal: true
       }
     ];
 
@@ -148,7 +143,7 @@ export default class NavBar extends React.Component {
               <Dropdown as={NavItem}>
                 <Dropdown.Toggle
                   as={NavLink}
-                  className={`${NavbarStyles.navLink} border-start border-white ps-1`}
+                  className={`${NavbarStyles.navLink} ps-1`}
                 >
                   &nbsp;Edições anteriores
                 </Dropdown.Toggle>
