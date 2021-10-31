@@ -1,12 +1,12 @@
-import React from "react"
-import Container from "react-bootstrap/Container"
-import Row from "react-bootstrap/Row"
-import Col from "react-bootstrap/Col"
+import React from "react";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
-import Prize from "../competition/prize"
-import Participate from "../utils/participate"
+import Prize from "../competition/prize";
+import Participate from "../utils/participate";
 
-import CompetitionStyles from "../../styles/competition/competition.module.css"
+import CompetitionStyles from "../../styles/competition/competition.module.css";
 
 const Competition = () => (
   <div>
@@ -35,9 +35,13 @@ const Competition = () => (
     <div className={CompetitionStyles.orange_area}>
       <Container>
         <Row className={CompetitionStyles.prizeSquares}>
-          <Prize type="first" title="Nintendo Switch" description="" />
-          <Prize type="second" title="Headphones Bluetooth" description="" />
-          <Prize type="third" title="Cartão oferta Fnac 100€" description="" />
+          <Prize type="first" title="Nintendo Switch Light" description="" />
+          <Prize
+            type="second"
+            title="JBL Bluetooth Headphones"
+            description=""
+          />
+          <Prize type="third" title="Cartão Oferta Fnac 50€" description="" />
         </Row>
         <div className={CompetitionStyles.conditions_container + " pt-4"}>
           <Row>
@@ -93,6 +97,6 @@ const Competition = () => (
       <p className={CompetitionStyles.participateText}>Got what it takes?</p>
     </Participate>
   </div>
-)
+);
 
-export default Competition
+export default Competition;

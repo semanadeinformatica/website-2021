@@ -8,7 +8,7 @@
 }
 
 .orange_area {
-  background-color: var(--color3);
+  background-color: #0b2f46;
   padding-bottom: 2em;
 }
 .prizeSquares {
@@ -19,7 +19,7 @@
 
   bottom: 140px;
 
-  color: var(--color5);
+  color: #cdfffc;
 }
 
 .squarePrize {
@@ -39,10 +39,11 @@
   font-weight: 600;
   text-align: left;
   letter-spacing: 0.7px;
-  color: var(--color5);
+  color: #cdfffc;
 }
 
 .prizeTitle {
+  color: #cdfffc;
   margin-top: 10px;
   margin-left: 15px;
   font-size: 19px;

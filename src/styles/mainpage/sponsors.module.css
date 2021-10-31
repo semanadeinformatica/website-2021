@@ -1,15 +1,23 @@
 .sponsorsSection {
-  padding: 15rem 0 7rem 0;
-  background-image: linear-gradient(var(--color5), 5%, white 10%);
+  padding: 5rem 0 7rem 0;
+  background-color: white;
 }
 
 .h2 {
-  color: var(--color5) !important;
+  font-size: 2.5rem;
+  color: #fc08bc !important;
+  opacity: 100%;
+}
+
+hr:not([size]) {
+  height: 0.3rem;
+  width: 19rem;
 }
 
 .headingLine {
-  color: var(--color5) !important;
-  background-color: var(--color5) !important;
+  color: #fc08bc !important;
+  opacity: 100%;
+  background-color: #fc08bc !important;
 }
 
 .sponsorsType {
