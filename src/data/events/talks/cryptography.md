@@ -13,7 +13,7 @@ speakers:
     twitter: https://twitter.com/claucece
 
 day: 2021-11-15
-start_time: 15h50
+start_time: 15h40
 end_time: 16h10
 place: Online Room
 type: Talk

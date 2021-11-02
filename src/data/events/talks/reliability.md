@@ -13,7 +13,7 @@ speakers:
     linkedin: https://www.linkedin.com/in/mccricardo
 
 day: 2021-11-15
-start_time: 17h10
+start_time: 17h20
 end_time: 17h50
 place: Online Room
 type: Talk

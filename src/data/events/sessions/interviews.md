@@ -1,9 +1,9 @@
 ---
 title: Sessão de Entrevistas
 img: ../../../images/svg/interviews.svg
-day: 2021-11-15
-start_time: 15h00
-end_time: 17h00
+day: 2021-11-16
+start_time: 16h00
+end_time: 18h00
 place: Online Room
 path: /sessions/sessao-de-entrevistas
 type: session
