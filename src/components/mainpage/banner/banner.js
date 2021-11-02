@@ -1,14 +1,10 @@
 import React from "react";
-
-import BasicInfo from "./basic-info";
 import Carousel from "react-bootstrap/Carousel";
-
 import Background from "../../../images/gradient-cover-background.png";
-
-import BannerStyles from "../../../styles/mainpage/banner.module.css";
 import Icon from "../../../images/svg/logo_sinf_comp.inline.svg";
-
+import BannerStyles from "../../../styles/mainpage/banner.module.css";
 import { useShowcaseImages } from "../../hooks/showcase-query";
+import BasicInfo from "./basic-info";
 
 const Banner = () => {
   const data = useShowcaseImages();
@@ -37,7 +33,7 @@ const Banner = () => {
             ].join(" ")}
             key={pic.node.id}
           >
-            <img src={Background} />
+            <img src={Background} alt="Background" />
           </Carousel.Item>
         ))}
       </Carousel>

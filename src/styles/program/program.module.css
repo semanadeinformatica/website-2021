@@ -15,16 +15,16 @@
 }
 
 .headingLine {
-  width: 75%;
-  height: 2px;
   margin: 0.2rem auto;
   color: var(--color5);
   background-color: var(--color5);
 }
 
 .innerTab {
-  color: #bebebe !important;
+  color: #bbb !important;
   font-weight: 500;
+  padding: 0.3rem 0;
+  margin: 0 1rem;
   cursor: pointer;
 }
 
@@ -34,6 +34,8 @@
 
 .innerTab.active {
   color: var(--color5) !important;
+  width: auto;
+  border-bottom: 0.3rem solid var(--color5);
 }
 
 .navItem {

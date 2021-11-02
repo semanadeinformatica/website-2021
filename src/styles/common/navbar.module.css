@@ -1,8 +1,8 @@
 @import "./palette.css";
-@import url("https://nts.googleapis.com/css?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 
 .logo {
-  height: 1.4rem;
+  height: 1.5rem;
 }
 
 .logo path {
@@ -56,10 +56,9 @@
 
 .toggler {
   position: absolute;
-  top: 1px;
   right: 0.1rem;
-  border: none;
-  margin-top: 0.5rem;
+  border: none !important;
+  box-shadow: none !important;
 }
 
 .toggler span {
@@ -88,8 +87,7 @@
   }
 
   .navbar > div:first-child {
-    border-top: 1px solid white;
-    padding-top: 0.5rem;
+    border-top: 2px solid rgba(255, 255, 255, 0.8);
   }
 }
 
