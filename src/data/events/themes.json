@@ -1,17 +1,17 @@
 [
   {
     "date": "15 Novembro",
-    "theme": "Tema do dia 1...",
+    "theme": "Diversity in Computer Science",
     "icon": "network"
   },
   {
     "date": "16 Novembro",
-    "theme": "Tema do dia 2...",
+    "theme": "Visual Simulation",
     "icon": "diploma"
   },
   {
     "date": "17 Novembro",
-    "theme": "Tema do dia 3...",
+    "theme": "AI in the real world",
     "icon": "cogs"
   }
 ]

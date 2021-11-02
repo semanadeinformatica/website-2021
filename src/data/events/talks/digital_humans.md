@@ -18,7 +18,7 @@ day: 2021-11-16
 start_time: 14h30
 end_time: 15h00
 place: Online Room
-type: 0-talk
+type: Talk
 
 path: /talks/digital_humans
 ---
