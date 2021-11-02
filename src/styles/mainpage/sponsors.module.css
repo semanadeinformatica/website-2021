@@ -10,8 +10,8 @@
 }
 
 hr:not([size]) {
-  height: 0.3rem;
-  width: 19rem;
+  height: 0.3rem !important;
+  width: 19rem !important;
 }
 
 .headingLine {

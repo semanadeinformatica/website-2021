@@ -1,7 +1,7 @@
-import React from "react"
-import Nav from "react-bootstrap/Nav"
+import React from "react";
+import Nav from "react-bootstrap/Nav";
 
-import programStyles from "../../styles/program/program.module.css"
+import programStyles from "../../styles/program/program.module.css";
 
 const EventsNav = ({ toggle, activeTab }) => (
   <Nav className="justify-content-center">
@@ -16,7 +16,6 @@ const EventsNav = ({ toggle, activeTab }) => (
         eventKey="talks"
       >
         Palestras
-        {activeTab === "talks" && <hr className={programStyles.headingLine} />}
       </Nav.Link>
     </Nav.Item>
     <Nav.Item>
@@ -30,12 +29,9 @@ const EventsNav = ({ toggle, activeTab }) => (
         }
       >
         Atividades
-        {activeTab === "activities" && (
-          <hr className={programStyles.headingLine} />
-        )}
       </Nav.Link>
     </Nav.Item>
   </Nav>
-)
+);
 
-export default EventsNav
+export default EventsNav;

@@ -117,7 +117,7 @@ export default class NavBar extends React.Component {
           className={`py-0 ${NavbarStyles.navbar} ${
             this.transparent && !this.state.isOpen
               ? NavbarStyles.noBackground
-              : ``
+              : `py-2`
           }`}
         >
           <Navbar.Collapse className="w-100 order-1 order-lg-0 dual-collapse2">
@@ -162,7 +162,7 @@ export default class NavBar extends React.Component {
             </NavWrapper>
           </Navbar.Collapse>
           <Navbar.Toggle
-            className={NavbarStyles.toggler}
+            className={`${NavbarStyles.toggler}`}
             onClick={this.toggle}
           />
         </Navbar>

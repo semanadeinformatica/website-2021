@@ -1,12 +1,12 @@
 import React from "react";
 import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
-import {
-  FaEnvelope,
-  FaLinkedin,
-  FaFacebookSquare,
-  FaInstagramSquare
-} from "react-icons/fa";
+// import {
+//   FaEnvelope,
+//   FaLinkedin,
+//   FaFacebookSquare,
+//   FaInstagramSquare
+// } from "react-icons/fa";
 
 import {
   AiOutlineLinkedin,
@@ -61,7 +61,7 @@ const Contacts = () => (
             href={link.href}
             className={ContactStyles.link}
             style={{ justifySelf: index % 2 === 0 ? "start" : "end" }}
-            key={link.href}
+            key={`link-${index}`}
           >
             <span className={ContactStyles.icon}>{link.icon}</span>
             <span className="h5">{link.text}</span>
