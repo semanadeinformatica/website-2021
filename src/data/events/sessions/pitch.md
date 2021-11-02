@@ -1,7 +1,7 @@
 ---
 title: Pitch de Oportunidades
 img: ../../../images/svg/pitch.svg
-day: 2020-11-09
+day: 2021-11-15
 start_time: 18h10
 end_time: 20h10
 place: Online Room

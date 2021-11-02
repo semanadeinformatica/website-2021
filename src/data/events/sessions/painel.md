@@ -113,7 +113,7 @@ participants:
     img: ../../../images/speakers/joana_ferreira.jpg
     linkedin: https://www.linkedin.com/in/joanaferreira0011/
 
-day: 2020-11-10
+day: 2021-11-15
 start_time: 16h10
 end_time: 18h10
 type: panel
