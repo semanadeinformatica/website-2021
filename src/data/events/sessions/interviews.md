@@ -7,6 +7,17 @@ end_time: 18h00
 place: Online Room
 path: /sessions/sessao-de-entrevistas
 type: session
+companies:
+  - name: sonae
+    link: ""
+  - name: byside
+    link: ""
+  - name: switch
+    link: ""
+  - name: critical
+    link: ""
+  - name: bosch
+    link: ""
 ---
 
 A Sessão de Entrevistas será um momento de contacto com direto entre os estudantes e as empresas.
