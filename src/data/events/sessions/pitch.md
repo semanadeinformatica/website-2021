@@ -8,6 +8,33 @@ place: Online Room
 path: /sessions/pitch-de-oportunidades
 type: session
 registration: ""
+companies:
+  - name: jumpseller
+    link: ""
+  - name: glint
+    link: ""
+  - name: sonae
+    link: ""
+  - name: edp
+    link: ""
+  - name: byside
+    link: ""
+  - name: switch
+    link: ""
+  - name: critical
+    link: ""
+  - name: bosch
+    link: ""
+  - name: alticelabs
+    link: ""
+  - name: agap2it
+    link: ""
+  - name: itsector
+    link: ""
+  - name: capgemni
+    link: ""
+  - name: kpmg
+    link: ""
 ---
 
 Durante o Pitch de Oportunidades, várias empresas farão um pequeno pitch promocional e, ainda que num contexto remoto, são promovidos momentos de networking com as empresas presentes.
