@@ -13,7 +13,7 @@ participants:
     twitter: http://twitter.com/ruipiresc
     instagram: http://instagram.com/ruipiresc
 
-  - name: Em breve
+  - name: André Lago
     occupations:
       - what: ""
         where: ""

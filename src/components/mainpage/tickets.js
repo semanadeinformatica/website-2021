@@ -37,11 +37,10 @@ const Tickets = () => (
         <Row>
           <a
             className={ticketsStyles.signUp}
-            href="https://sinf2020.webex.com/sinf2020/onstage/g.php?PRID=9f676374423b492057001485c2a6be9e"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Inscreve-te
+            Incrições em breve
           </a>
         </Row>
       </div>
