@@ -81,12 +81,12 @@ export default class NavBar extends React.Component {
         url: "/equipa",
         text: "Equipa",
         internal: true
-      },
+      } /*,
       {
         url: "/competicao-programacao",
         text: "Competição",
         internal: true
-      }
+      }*/
     ];
 
     this.pastEditions = [
