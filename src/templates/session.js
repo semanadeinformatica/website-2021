@@ -25,11 +25,11 @@ export default function Template({ data }) {
         end_time={session.frontmatter.end_time}
         description={session.html}
       />
-      {session.frontmatter.companies ? (
+      {/*session.companies ? (
         <Companies companies={session.frontmatter.companies} />
       ) : (
         ""
-      )}
+      )*/}
       {session.frontmatter.participants && (
         <Participants participants={session.frontmatter.participants} />
       )}
@@ -43,6 +43,52 @@ export default function Template({ data }) {
 }
 
 export const sessionQuery = graphql`
+  query getSession($path: String!) {
+    markdownRemark(frontmatter: { path: { eq: $path } }) {
+      html
+      id
+      frontmatter {
+        path
+        title
+        img {
+          publicURL
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        day(formatString: "D MMMM", locale: "pt-PT")
+        place
+        start_time
+        end_time
+        registration
+        participants {
+          name
+          occupations {
+            what
+            where
+          }
+          bio
+          role
+          img {
+            publicURL
+            childImageSharp {
+              fluid {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+          linkedin
+          twitter
+          website
+        }
+      }
+    }
+  }
+`;
+
+/*export const sessionQuery = graphql`
   query getSession($path: String!) {
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
@@ -90,4 +136,4 @@ export const sessionQuery = graphql`
       }
     }
   }
-`;
+`;*/

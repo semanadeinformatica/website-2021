@@ -7,9 +7,6 @@ end_time: 18h00
 place: Online Room
 path: /sessions/sessao-de-entrevistas
 type: session
-companies:
-  - name: agap2it
-    link: https://forms.gle/kW2ZT3XfXNvNFACw9
 ---
 
 A Sessão de Entrevistas será um momento de contacto com direto entre os estudantes e as empresas.
