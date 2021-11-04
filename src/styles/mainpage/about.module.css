@@ -86,7 +86,6 @@
 @media (max-width: 576px) {
   .countDownContainer {
     width: 20rem;
-    font-size: 1.3pc;
   }
   .countDownContainer .countDownCol {
     flex-basis: 8rem;
