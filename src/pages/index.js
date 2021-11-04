@@ -22,7 +22,7 @@ const IndexPage = () => (
       <Tickets />
       <Sponsors />
       <Container fluid>
-        <Row>
+        <Row xs={1} md={2}>
           <Col>
             <Contacts />
           </Col>
