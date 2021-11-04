@@ -60,7 +60,10 @@ const Contacts = () => (
           <a
             href={link.href}
             className={ContactStyles.link}
-            style={{ justifySelf: index % 2 === 0 ? "start" : "end" }}
+            style={
+              ({ justifySelf: index % 2 === 0 ? "start" : "end" },
+              { float: "left" })
+            }
             key={`link-${index}`}
           >
             <span className={ContactStyles.icon}>{link.icon}</span>
