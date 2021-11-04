@@ -49,24 +49,24 @@ class Countdown extends React.Component {
   render() {
     return (
       <Row>
-        <Col>
-          <Row className={AboutStyles.CountdownRow}>{this.state.days}</Row>
-          <Row className={AboutStyles.CountdownRow}>Dias</Row>
+        <Col className={AboutStyles.countDownCol}>
+          <Row className={AboutStyles.countDownRow}>{this.state.days}</Row>
+          <Row className={AboutStyles.countDownRow}>Dias</Row>
         </Col>
 
-        <Col>
-          <Row className={AboutStyles.CountdownRow}>{this.state.hours}</Row>
-          <Row className={AboutStyles.CountdownRow}>Horas</Row>
+        <Col className={AboutStyles.countDownCol}>
+          <Row className={AboutStyles.countDownRow}>{this.state.hours}</Row>
+          <Row className={AboutStyles.countDownRow}>Horas</Row>
         </Col>
 
-        <Col>
-          <Row className={AboutStyles.CountdownRow}>{this.state.minutes}</Row>
-          <Row className={AboutStyles.CountdownRow}>Minutos</Row>
+        <Col className={AboutStyles.countDownCol}>
+          <Row className={AboutStyles.countDownRow}>{this.state.minutes}</Row>
+          <Row className={AboutStyles.countDownRow}>Minutos</Row>
         </Col>
 
-        <Col>
-          <Row className={AboutStyles.CountdownRow}>{this.state.seconds}</Row>
-          <Row className={AboutStyles.CountdownRow}>Segundos</Row>
+        <Col className={AboutStyles.countDownCol}>
+          <Row className={AboutStyles.countDownRow}>{this.state.seconds}</Row>
+          <Row className={AboutStyles.countDownRow}>Segundos</Row>
         </Col>
       </Row>
     );

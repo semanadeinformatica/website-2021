@@ -50,7 +50,7 @@ const About = () => {
           </Row>
         </Container>
       </div>
-      <div className={[AboutStyles.CountdownBackground]}>
+      <div className={[AboutStyles.countDownBackground]}>
         <div className={[AboutStyles.countDownContainer]}>
           <Countdown />
         </div>

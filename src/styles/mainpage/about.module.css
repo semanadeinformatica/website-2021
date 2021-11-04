@@ -12,7 +12,7 @@
   padding-bottom: 20px;
 }
 
-.CountdownBackground {
+.countDownBackground {
   background: linear-gradient(
     180deg,
     #ff8451 0%,
@@ -29,9 +29,10 @@
   padding-right: 2.5rem;
   margin: auto;
   font-size: 1.5pc;
+  width: 40rem;
 }
 
-.CountdownRow {
+.countDownRow {
   display: block;
   text-align: center;
 }
@@ -72,33 +73,22 @@
   border-left: 8px solid white;
 }
 
-@media screen and (min-width: 575px) {
-  .countDownContainer {
-    width: 50%;
-  }
-}
-
-@media screen and (max-width: 575px) {
-  .aboutContainer .countdownContainer .number {
-    font-size: 30px;
-  }
-
-  .aboutContainer .countdownContainer .timeType {
-    font-size: 15px;
-  }
-
-  .aboutContainer .countdownContainer {
-    top: 48.5px;
-  }
-
-  .countDownContainer {
-    font-size: 1pc;
-    width: 90%;
-  }
-}
-
 @media (max-width: 768px) {
   .imageContainer {
     display: none;
+  }
+
+  .countDownContainer {
+    width: 80%;
+  }
+}
+
+@media (max-width: 576px) {
+  .countDownContainer {
+    width: 20rem;
+    font-size: 1.3pc;
+  }
+  .countDownContainer .countDownCol {
+    flex-basis: 8rem;
   }
 }
