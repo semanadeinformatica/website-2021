@@ -25,10 +25,8 @@
 .countDownContainer {
   color: white;
   background-color: var(--color3);
-  /*border-radius: 0.5rem;*/
   padding: 1rem;
   padding-right: 2.5rem;
-  width: 40rem;
   margin: auto;
   font-size: 1.5pc;
 }
@@ -74,6 +72,12 @@
   border-left: 8px solid white;
 }
 
+@media screen and (min-width: 575px) {
+  .countDownContainer {
+    width: 50%;
+  }
+}
+
 @media screen and (max-width: 575px) {
   .aboutContainer .countdownContainer .number {
     font-size: 30px;
@@ -85,6 +89,11 @@
 
   .aboutContainer .countdownContainer {
     top: 48.5px;
+  }
+
+  .countDownContainer {
+    font-size: 1pc;
+    width: 90%;
   }
 }
 
