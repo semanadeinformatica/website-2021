@@ -6,11 +6,11 @@ import PageBanner from "../components/utils/page_banner";
 
 const CompetitionPage = () => (
   <Layout darkFooter>
-    <SEO title="Competição de programação" />
+    {/*<SEO title="Competição de programação" />
     <PageBanner>
       <h1>Competição de Programação</h1>
     </PageBanner>
-    <Competition />
+<Competition />*/}
   </Layout>
 );
 

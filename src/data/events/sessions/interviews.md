@@ -8,8 +8,16 @@ place: Online Room
 path: /sessions/sessao-de-entrevistas
 type: session
 companies:
-  - name: agap2it
-    link: https://forms.gle/kW2ZT3XfXNvNFACw9
+  - name: sonae
+    link: ""
+  - name: byside
+    link: ""
+  - name: switch
+    link: ""
+  - name: critical
+    link: ""
+  - name: bosch
+    link: ""
 ---
 
 A Sessão de Entrevistas será um momento de contacto com direto entre os estudantes e as empresas.

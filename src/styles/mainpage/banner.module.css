@@ -6,6 +6,7 @@
   height: 100vh;
   font-family: "Roboto", sans-serif;
   color: white;
+  background-color: white;
 }
 
 .banner img {
@@ -15,6 +16,7 @@
 
 .gradient {
   background-color: var(--color1);
+  background-image: var(--color1);
   width: auto;
   height: 100vh;
 }
@@ -86,6 +88,7 @@
   transition-duration: 2s;
   transition-timing-function: ease-in-out;
   height: 100vh;
+  background-color: var(--color1);
 }
 
 .carouselImage {

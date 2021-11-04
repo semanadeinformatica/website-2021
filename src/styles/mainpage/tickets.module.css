@@ -11,6 +11,11 @@
   margin: 0 auto 2rem auto;
 }
 
+.CountdownRow {
+  display: block;
+  text-align: center;
+}
+
 .CountdownContainer {
   border-radius: 1rem;
 }
@@ -76,6 +81,10 @@
 }
 
 @media (max-width: 550px) {
+  .CountdownRow {
+    padding: 1pc;
+  }
+
   .wrapper {
     border: none;
     grid-template-columns: 1fr;

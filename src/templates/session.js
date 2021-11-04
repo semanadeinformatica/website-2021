@@ -1,16 +1,17 @@
-import React from "react"
-import { graphql } from "gatsby"
+import React from "react";
+import { graphql } from "gatsby";
 
-import Layout from "../components/common/layout"
-import SEO from "../components/common/seo"
-import Banner from "../components/session/banner"
-import Description from "../components/session/description"
-import Companies from "../components/session/companies"
-import Participate from "../components/utils/participate"
-import Participants from "../components/session/participants"
+import Layout from "../components/common/layout";
+import SEO from "../components/common/seo";
+import Banner from "../components/session/banner";
+import Description from "../components/session/description";
+import Companies from "../components/session/companies";
+import Participate from "../components/utils/participate";
+import Participants from "../components/session/participants";
+import OpenSoon from "../components/utils/open_soon";
 
 export default function Template({ data }) {
-  const { markdownRemark: session } = data
+  const { markdownRemark: session } = data;
 
   return (
     <Layout darkFooter>
@@ -32,9 +33,13 @@ export default function Template({ data }) {
       {session.frontmatter.participants && (
         <Participants participants={session.frontmatter.participants} />
       )}
-      <Participate link={session.frontmatter.registration} />
+      {session.registration ? (
+        <Participate link={session.frontmatter.registration} />
+      ) : (
+        <OpenSoon />
+      )}
     </Layout>
-  )
+  );
 }
 
 export const sessionQuery = graphql`
@@ -85,4 +90,4 @@ export const sessionQuery = graphql`
       }
     }
   }
-`
+`;
