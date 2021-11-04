@@ -39,7 +39,7 @@ const Tickets = () => (
             target="_blank"
             rel="noopener noreferrer"
           >
-            Incrições em breve
+            Inscrições em breve
           </a>
         </Row>
       </div>
