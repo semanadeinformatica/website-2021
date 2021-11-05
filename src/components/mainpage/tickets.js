@@ -38,8 +38,9 @@ const Tickets = () => (
             className={ticketsStyles.signUp}
             target="_blank"
             rel="noopener noreferrer"
+            href="https://www.eventbrite.pt/e/bilhetes-semana-de-informatica-2021-205684105697"
           >
-            Inscrições em breve
+            Inscrições aqui!
           </a>
         </Row>
       </div>

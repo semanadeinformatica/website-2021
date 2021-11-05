@@ -12,8 +12,12 @@ const OpenSoon = ({ children }) => {
         <Row>
           <Col xs="12" className={ParticipateStyles.colContent}>
             {children}
-            <Button outline className={ParticipateStyles.participateButton}>
-              Inscrições em breve
+            <Button
+              outline
+              href="https://www.eventbrite.pt/e/bilhetes-semana-de-informatica-2021-205684105697"
+              className={ParticipateStyles.participateButton}
+            >
+              Inscrições aqui!
             </Button>
           </Col>
         </Row>
