@@ -59,7 +59,7 @@
 
 .signUp:hover {
   color: var(--color4);
-  opacity: 80%;
+  opacity: 0.8;
 }
 
 .section {
