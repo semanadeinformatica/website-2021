@@ -10,31 +10,31 @@
 }
 
 .gold {
-  width: 30rem;
+  width: 15rem;
   margin: 0 auto;
 }
 
 .silver {
-  width: 20rem;
+  width: 12rem;
   margin: 0 auto;
 }
 
 .bronze {
-  width: 15rem;
+  width: 5rem;
   margin: 0 auto;
 }
 
 @media screen and (max-width: 767px) {
   .gold {
-    width: 20rem;
-  }
-
-  .silver {
     width: 15rem;
   }
 
-  .bronze {
+  .silver {
     width: 10rem;
+  }
+
+  .bronze {
+    width: 5rem;
   }
 }
 
