@@ -35,9 +35,13 @@ const Competition = () => (
     <div className={CompetitionStyles.orange_area}>
       <Container>
         <Row className={CompetitionStyles.prizeSquares}>
-          <Prize type="first" title="Em breve" description="" />
-          <Prize type="second" title="Em breve" description="" />
-          <Prize type="third" title="Em breve" description="" />
+          <Prize type="first" title="Nintendo Switch" description="" />
+          <Prize
+            type="second"
+            title="Headphones Bluetooth Sony"
+            description=""
+          />
+          <Prize type="third" title="Cartão oferta Fnac 100€" description="" />
         </Row>
         <div className={CompetitionStyles.conditions_container + " pt-4"}>
           <Row>
