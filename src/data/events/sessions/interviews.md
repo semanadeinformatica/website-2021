@@ -7,17 +7,18 @@ end_time: 18h00
 place: Online Room
 path: /sessions/sessao-de-entrevistas
 type: session
+registration: "https://docs.google.com/forms/d/e/1FAIpQLSe1jpgzHH0gKYAVZQpgoPws8ciY7YZkPK2k1pqomi1uj4HnCA/viewform"
 companies:
   - name: sonae
-    link: ""
+    link: "https://docs.google.com/forms/d/e/1FAIpQLSe1jpgzHH0gKYAVZQpgoPws8ciY7YZkPK2k1pqomi1uj4HnCA/viewform"
   - name: byside
-    link: ""
+    link: "https://docs.google.com/forms/d/e/1FAIpQLSe1jpgzHH0gKYAVZQpgoPws8ciY7YZkPK2k1pqomi1uj4HnCA/viewform"
   - name: switch
-    link: ""
+    link: "https://docs.google.com/forms/d/e/1FAIpQLSe1jpgzHH0gKYAVZQpgoPws8ciY7YZkPK2k1pqomi1uj4HnCA/viewform"
   - name: critical
-    link: ""
+    link: "https://docs.google.com/forms/d/e/1FAIpQLSe1jpgzHH0gKYAVZQpgoPws8ciY7YZkPK2k1pqomi1uj4HnCA/viewform"
   - name: bosch
-    link: ""
+    link: "https://docs.google.com/forms/d/e/1FAIpQLSe1jpgzHH0gKYAVZQpgoPws8ciY7YZkPK2k1pqomi1uj4HnCA/viewform"
 ---
 
 A Sessão de Entrevistas será um momento de contacto com direto entre os estudantes e as empresas.

@@ -33,10 +33,14 @@ export default function Template({ data }) {
       {session.frontmatter.participants && (
         <Participants participants={session.frontmatter.participants} />
       )}
-      {session.registration ? (
-        <Participate link={session.frontmatter.registration} />
+      {session.frontmatter.registration ? (
+        session.frontmatter.registration == "soon" ? (
+          <OpenSoon />
+        ) : (
+          <Participate link={session.frontmatter.registration} />
+        )
       ) : (
-        <OpenSoon />
+        ""
       )}
     </Layout>
   );

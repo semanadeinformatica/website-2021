@@ -49,9 +49,8 @@ day: 2021-11-16
 start_time: 16h10
 end_time: 18h30
 type: panel
-registration:
 
 path: /panels/painel
 ---
 
-Em breve
+O principal objectivo deste painel é dar aos alunos do L.EIC e do M.EIC uma perspetiva atual sobre o mercado de trabalho em que este curso se insere e desmistificar o início de carreira no setor. Para tal, convidou-se vários ex-alunos de Engenharia Informática na FEUP para que possam partilhar as suas experiências e conselhos numa conversa informal e honesta.

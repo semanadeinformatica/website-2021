@@ -7,7 +7,6 @@ end_time: 20h10
 place: Online Room
 path: /sessions/pitch-de-oportunidades
 type: session
-registration: ""
 companies:
   - name: jumpseller
     link: ""
