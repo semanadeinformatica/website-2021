@@ -35,13 +35,9 @@ const Competition = () => (
     <div className={CompetitionStyles.orange_area}>
       <Container>
         <Row className={CompetitionStyles.prizeSquares}>
-          <Prize type="first" title="Nintendo Switch Light" description="" />
-          <Prize
-            type="second"
-            title="JBL Bluetooth Headphones"
-            description=""
-          />
-          <Prize type="third" title="Cartão Oferta Fnac 50€" description="" />
+          <Prize type="first" title="Em breve" description="" />
+          <Prize type="second" title="Em breve" description="" />
+          <Prize type="third" title="Em breve" description="" />
         </Row>
         <div className={CompetitionStyles.conditions_container + " pt-4"}>
           <Row>
@@ -54,17 +50,17 @@ const Competition = () => (
             <Col xs="12" className={CompetitionStyles.conditionList}>
               <ul>
                 <li>
-                  A Competição terá início dia 8 de Novembro às 21h30,
-                  decorrendo durante os 3 próximos dias até dia 11 de Novembro
-                  às 16:00.
+                  A Competição terá início dia 14 de Novembro às 21h30,
+                  decorrendo durante os 3 próximos dias até dia 17 de Novembro
+                  às 15:00.
                 </li>
                 <li>
                   A competição decorrerrá online, através da plataforma
                   HackerRank.
                 </li>
                 <li>
-                  Serão lançados diariamente 2 novos desafios, nos dias 8, 9 e
-                  10 de novembro às 21h30.
+                  Serão lançados diariamente 2 novos desafios, nos dias 14, 15 e
+                  16 de novembro às 21h30.
                 </li>
                 <li>
                   Apenas estarás habilitado aos prémios caso tenhas tenhas
@@ -93,7 +89,7 @@ const Competition = () => (
       </Container>
     </div>
 
-    <Participate link="https://www.hackerrank.com/sinf-2020-programming-contest">
+    <Participate link="https://www.hackerrank.com/sinf21-programming-contest">
       <p className={CompetitionStyles.participateText}>Got what it takes?</p>
     </Participate>
   </div>

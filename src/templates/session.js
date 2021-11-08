@@ -34,7 +34,7 @@ export default function Template({ data }) {
         <Participants participants={session.frontmatter.participants} />
       )}
       {session.frontmatter.registration ? (
-        session.frontmatter.registration == "soon" ? (
+        session.frontmatter.registration === "soon" ? (
           <OpenSoon />
         ) : (
           <Participate link={session.frontmatter.registration} />
