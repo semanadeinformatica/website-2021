@@ -38,7 +38,7 @@ const About = () => {
             <Col xs="12" lg="6">
               <p>
                 A edição de 2021 decorre entre os dias 15 a 17 de novembro, em
-                modo <em>remote</em>. Os participantes têm a seu dispor
+                modo <em>híbrido</em>. Os participantes têm a seu dispor
                 palestras e workshops onde entrarão em contacto com diversas
                 tecnologias e conceitos que não intervêm no percurso académico,
                 focando-se portanto nas skills técnicas, assim como um pitch e

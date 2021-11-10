@@ -1,5 +1,5 @@
 ---
-title: The art, science and future of Digital humanss
+title: The art, science and future of Digital humans
 
 speakers:
   - name: Verónica Orvalho
