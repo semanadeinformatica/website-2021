@@ -1,5 +1,5 @@
 ---
 name: capgemni
 type: silver
-img: "../../images/sponsors/silver/capgemni.png"
+img: "../../images/sponsors/silver/capgemni-engineering.png"
 ---
