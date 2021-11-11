@@ -29,6 +29,7 @@ place: FEUP
 type: Workshop
 
 path: /workshops/internet-of-things/
+registration: https://www.eventbrite.pt/e/bilhetes-sinf-workshop-internet-of-cheap-things-208196991807
 ---
 
 In this hands-on workshop, participants will learn how to program low-cost IoT devices like the ESP8266.

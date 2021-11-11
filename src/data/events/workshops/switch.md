@@ -28,6 +28,7 @@ place: FEUP
 type: workshop
 
 path: /workshops/payment-app/
+registration: https://www.eventbrite.pt/e/bilhetes-workshop-orquestracao-de-pagamentos-event-based-microservices-208641641767
 ---
 
 Os participantes terão a oportunidade de desenvolver um conceito de loja online e integrar com PayPal e Stripe para definir os métodos de pagamento disponíveis no checkout. Através desta atividade, tornaremos tangível a complexidade da integração de múltiplos fornecedores de pagamentos e a relevância de soluções de orquestração como a Switch. Os alunos formarão equipas para concluir esta atividade e serão acompanhados por engenheiros da Switch.
