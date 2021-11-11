@@ -25,7 +25,7 @@ day: 2021-11-16
 start_time: 16h00
 end_time: 18h30
 place: FEUP
-type: 1-workshop
+type: workshop
 
 path: /workshops/payment-app/
 ---
