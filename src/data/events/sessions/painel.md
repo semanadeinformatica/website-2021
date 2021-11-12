@@ -45,6 +45,15 @@ participants:
     email:
     linkedin: https://www.linkedin.com/in/luis-azevedoduarte/
 
+  - name: Marina Camilo
+    occupations:
+      - what: "Mobile Engineer - iOS"
+        where: Farfetch
+    bio: ""
+    img: "../../../images/speakers/marina_camilo.jpeg"
+    email: ""
+    linkedin: https://www.linkedin.com/in/marina-ff-camilo/
+
 day: 2021-11-16
 start_time: 16h10
 end_time: 18h30
