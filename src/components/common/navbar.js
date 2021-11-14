@@ -73,6 +73,11 @@ export default class NavBar extends React.Component {
 
     this.rightLinks = [
       {
+        url: "https://ctf.sinf.pt",
+        text: "CTF",
+        internal: false
+      },
+      {
         url: "/program",
         text: "Programa",
         internal: true
