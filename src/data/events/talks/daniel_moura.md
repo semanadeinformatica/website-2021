@@ -15,7 +15,7 @@ day: 2021-11-17
 start_time: 16h10
 end_time: 16h40
 place: Online Room
-type: talk
+type: Talk
 
 path: /talks/data
 ---

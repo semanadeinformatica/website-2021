@@ -25,7 +25,7 @@ day: 2021-11-16
 start_time: 16h00
 end_time: 18h30
 place: FEUP
-type: workshop
+type: Workshop
 
 path: /workshops/payment-app/
 registration: https://www.eventbrite.pt/e/bilhetes-workshop-orquestracao-de-pagamentos-event-based-microservices-208641641767

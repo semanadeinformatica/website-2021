@@ -45,6 +45,15 @@ participants:
     email:
     linkedin: https://www.linkedin.com/in/luis-azevedoduarte/
 
+  - name: José Aleixo
+    occupations:
+      - what: Full Stack Engineer
+        where: Locatee, Zurique
+    bio: "I am a Full Stack Engineer, currently living and working in Zurich. I have an Integrated Master’s degree in Software Engineering and Computer Science from the University of Porto. After graduating, I started doing research in deep reinforcement learning and am currently pursuing a Ph.D. part-time. I aspire to build efficient and intelligent systems capable of processing data and providing valuable insights."
+    img: "../../../images/speakers/jose_aleixo.jpg"
+    email: ""
+    linkedin: https://www.linkedin.com/in/josealeixo/
+
   - name: Marina Camilo
     occupations:
       - what: "Mobile Engineer - iOS"
