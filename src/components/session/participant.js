@@ -1,11 +1,11 @@
-import React from "react"
-import Row from "react-bootstrap/Row"
-import Col from "react-bootstrap/Col"
+import React from "react";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
-import Overlay from "../utils/overlay"
-import LinksList from "../utils/links_list"
+import Overlay from "../utils/overlay";
+import LinksList from "../utils/links_list";
 
-import PanelStyles from "../../styles/session/panel.module.css"
+import PanelStyles from "../../styles/session/panel.module.css";
 
 const Participant = ({ participant, color }) => (
   <Row className={PanelStyles.participant}>
@@ -19,6 +19,7 @@ const Participant = ({ participant, color }) => (
             twitter={participant.twitter}
             website={participant.website}
             github={participant.github}
+            instagram={participant.instagram}
           />
         }
         border
@@ -33,6 +34,6 @@ const Participant = ({ participant, color }) => (
       <p>{participant.bio}</p>
     </Col>
   </Row>
-)
+);
 
-export default Participant
+export default Participant;

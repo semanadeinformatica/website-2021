@@ -23,7 +23,7 @@ participants:
 
     img: "../../../images/speakers/Rui_Pires.jpeg"
     twitter: http://twitter.com/ruipiresc
-    instagram: http://instagram.com/ruipiresc
+    instagram: https://www.instagram.com/ruipiresc/
 
   - name: Pedro Costa
     occupations:
@@ -56,12 +56,22 @@ participants:
 
   - name: Marina Camilo
     occupations:
-      - what: "Mobile Engineer - iOS"
-        where: Farfetch
-    bio: ""
+      - what: iOS developer
+        where: Sky
+    bio: "Finalizei o curso em 2018 e comecei a trabalhar logo de seguido no programa PlugIn da Farfetch. Ao final de dois anos e meio e com vontade de experimentar novos desafios decidi aceitar trabalhar na Sky, no produto Peacock da NBCUniversal."
     img: "../../../images/speakers/marina_camilo.jpeg"
     email: ""
     linkedin: https://www.linkedin.com/in/marina-ff-camilo/
+    instagram: https://www.instagram.com/marinaffcamilo/
+
+  - name: Rui Neves
+    occupations:
+      - what: Head of Product
+        where: Farfetch, Porto
+    bio: "I have 15+ years of experience as a computer engineer and a successful track record on roles such as Head of Product, Engineering Manager / Tech Lead, Agile Coach / Scrum Master, Solutions Architect, Head of PMO / Head of Delivery / Portfolio Manager / Program Manager, COO and CEO. On my free time, I volunteer organizing Commit Porto, an international technology conference, I was for 4 years the President of AlumniEI-FEUP and I successfully fulfilled a major personal goal: a round the world trip."
+    img: "../../../images/speakers/rui_neves.jpeg"
+    email:
+    linkedin: https://www.linkedin.com/in/rsneves/
 
 day: 2021-11-16
 start_time: 16h10

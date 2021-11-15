@@ -90,6 +90,7 @@ export const sessionQuery = graphql`
           linkedin
           twitter
           website
+          instagram
         }
       }
     }

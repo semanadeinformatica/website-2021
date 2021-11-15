@@ -1,14 +1,26 @@
-import React from "react"
-import { FaLinkedin, FaTwitter, FaGithubSquare } from "react-icons/fa"
-import WebIcon from "../../images/svg/web_icon.inline.svg"
+import React from "react";
+import {
+  FaInstagram,
+  FaLinkedin,
+  FaTwitter,
+  FaGithubSquare
+} from "react-icons/fa";
+import WebIcon from "../../images/svg/web_icon.inline.svg";
 
-import LinkStyles from "../../styles/utils/link_list.module.css"
+import LinkStyles from "../../styles/utils/link_list.module.css";
 
-const LinksList = ({ linkedin, twitter, github, website }) => (
+const LinksList = ({ linkedin, twitter, github, website, instagram }) => (
   <div className={LinkStyles.links}>
     {linkedin ? (
       <a href={linkedin} className={LinkStyles.link}>
         <FaLinkedin />
+      </a>
+    ) : (
+      ""
+    )}
+    {instagram ? (
+      <a href={instagram} className={LinkStyles.link}>
+        <FaInstagram />
       </a>
     ) : (
       ""
@@ -35,6 +47,6 @@ const LinksList = ({ linkedin, twitter, github, website }) => (
       ""
     )}
   </div>
-)
+);
 
-export default LinksList
+export default LinksList;
